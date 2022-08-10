@@ -222,14 +222,22 @@ a {
 
 
 
+.container-special {
+
+        min-height: 2000px;
+            min-width: 1920px;
+            background-color: #efefef;
 
 
-.item-img {
-    background-color: red;
-    height: 30vh;
-    width: calc(33.333% - 40px / 3);
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    overflow: hidden;
+}
+
+.container-all {
+/* прибавляем к размеру блока + padding 1110 + 20 + 20 */
+    max-width: 1150px;
+    padding: 0 20px;
+    /* ставим контейнер по середине */
+    margin: 0 auto;
+background-color: white;
+/* временно */
+height: 1900px;
 }
