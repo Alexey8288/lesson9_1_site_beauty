@@ -76,15 +76,15 @@ a {
 
 .logo__image {
     position: absolute;
-  
-        left: 400px;
-        top: 70px;
+
+    left: 400px;
+    top: 70px;
 
 
 }
 
 .logo__title {
-position: absolute;
+    position: absolute;
     width: 158px;
     height: 39px;
     left: 505px;
@@ -101,7 +101,7 @@ position: absolute;
 .feedback {}
 
 .feefback__phone {
-position: absolute;
+    position: absolute;
     width: 127px;
     height: 19px;
     left: 1178px;
@@ -114,13 +114,13 @@ position: absolute;
 }
 
 .feefback__button {
-position: absolute;
+    position: absolute;
     width: 117px;
     height: 15px;
     left: 1372px;
     top: 102px;
 
-     font-size: 14px;
+    font-size: 14px;
     line-height: 16px;
 
     color: #000000;
@@ -167,17 +167,69 @@ position: absolute;
 .main {}
 
 .container-super {
-    min-height: 300px;
+    min-height: 604px;
     min-width: 1920px;
     background-color: #f13c6e;
+    background-image: url(../img/Background1.png);
+
+    /* центрирует */
+    background-position: 50% 50%;
+    /* полностью вписывает картинку */
+    background-size: cover;
+    bg
 }
 
-.container-super__title {}
+.container-super__title {
+    position: absolute;
+    width: 308px;
+    height: 44px;
+    left: 405px;
+    top: 409px;
 
-.container-super__description {}
 
-.container-super__button {}
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    color: #FFFFFF;
+}
 
-.container-super__background {}
+.container-super__description {
+    position: absolute;
+    width: 308px;
+    height: 35px;
+    left: 405px;
+    top: 535px;
 
-.container-super__background-image {}
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.container-super__button {
+    position: absolute;
+        width: 117px;
+        height: 15px;
+        left: 432px;
+        top: 632px;
+    
+
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.05em;
+            color: #FFFFFF;
+}
+
+
+
+
+
+.item-img {
+    background-color: red;
+    height: 30vh;
+    width: calc(33.333% - 40px / 3);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+}
