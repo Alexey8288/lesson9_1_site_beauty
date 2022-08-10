@@ -1,8 +1,99 @@
 * {
     box-sizing: border-box;
+    /* сбрасывает все внешние отступы */
+    margin: 0;
+    /* сбрасывает все внутренние отступы */
+    padding: 0;
 }
 
 html {
+    /* добавляем google fonts */
+    font-family: 'Roboto', sans-serif;
+    /* ставим по умолчании жирность текста */
+    font-weight: 400;
+    /* line-height: 1.625; */
+}
 
-    
+a {
+    /* убираем подчеркивание на ссылках */
+    text-decoration: none;
+}
+
+.header {}
+
+.navbar-secondary {
+    min-height: 50px;
+    min-width: 1920px;
+    background-color: #efefef;
+    /* ставим отступы сверху и снизу */
+    /* padding: 76px 0 140px 0; */
+}
+
+.container {}
+
+.navbar-secondary__list {
+    /* убираем точки слева, делаем его не лист */
+    list-style-type: none;
+    /* ставим в один ряд */
+    display: flex;
+    /* разрешает перенос, в случае уменьшения экрана */
+    flex-wrap: wrap;
+    /* расстояние между словами в navbar */
+    column-gap: 30px;
+    /* ставим текст по середине по вертикали */
+    align-items: center;
+    /* ставим текст по середине по горизонтали */
+    justify-content: center;
+    padding-top: 15px;
+
+}
+
+.navbar-secondary__item {}
+
+.navbar-secondary__link {}
+
+.logo {}
+
+.logo__link {}
+
+.logo__image {}
+
+.logo__title {}
+
+.feedback {}
+
+.feefback__phone {}
+
+.navbar-primary {
+    min-height: 79px;
+    min-width: 1920px;
+    background-color: #ffffff;
+    border-top: 2px solid #efefef;
+
+}
+
+.navbar-primary__list {
+    /* убираем точки слева, делаем его не лист */
+    list-style-type: none;
+    /* ставим в один ряд */
+    display: flex;
+    /* разрешает перенос, в случае уменьшения экрана */
+    flex-wrap: wrap;
+    /* расстояние между словами в navbar */
+    column-gap: 40px;
+    /* ставим текст по середине по вертикали */
+    align-items: center;
+    /* ставим текст по середине по горизонтали */
+    justify-content: center;
+    /* padding-top: 40px; */
+}
+
+.navbar-primary__item {}
+
+.navbar-primary__link {}
+
+.main {
+min-height: 300px;
+    min-width: 1920px;
+    background-color: #f13c6e;
 }
