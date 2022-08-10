@@ -21,15 +21,15 @@ a {
 
 .header {}
 
-.navbar-secondary {
+.container1 {
     min-height: 50px;
     min-width: 1920px;
     background-color: #efefef;
-    /* ставим отступы сверху и снизу */
-    /* padding: 76px 0 140px 0; */
 }
 
-.container {}
+
+.navbar-secondary {}
+
 
 .navbar-secondary__list {
     /* убираем точки слева, делаем его не лист */
@@ -50,7 +50,25 @@ a {
 
 .navbar-secondary__item {}
 
-.navbar-secondary__link {}
+.navbar-secondary__link {
+    font-size: 14px;
+    line-height: 16px;
+    color: #333333;
+}
+
+.container2 {
+    min-height: 120px;
+    min-width: 1920px;
+    background-color: #ffffff;
+    /* ставит в ряд картинку и текст */
+    display: flex;
+    gap: 20px;
+
+    /* ставим текст по середине по горизонтали */
+    /* justify-content: center; */
+
+
+}
 
 .logo {}
 
@@ -58,19 +76,27 @@ a {
 
 .logo__image {}
 
-.logo__title {}
+.logo__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.1em;
+    color: #F13C6E;
+
+}
 
 .feedback {}
 
 .feefback__phone {}
 
-.navbar-primary {
+.container3 {
     min-height: 79px;
     min-width: 1920px;
     background-color: #ffffff;
     border-top: 2px solid #efefef;
-
 }
+
+.navbar-primary {}
 
 .navbar-primary__list {
     /* убираем точки слева, делаем его не лист */
@@ -82,18 +108,23 @@ a {
     /* расстояние между словами в navbar */
     column-gap: 40px;
     /* ставим текст по середине по вертикали */
-    align-items: center;
+    /* align-items: center; */
     /* ставим текст по середине по горизонтали */
     justify-content: center;
-    /* padding-top: 40px; */
+    padding-top: 25px;
 }
 
 .navbar-primary__item {}
 
-.navbar-primary__link {}
+.navbar-primary__link {
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+
+}
 
 .main {
-min-height: 300px;
+    min-height: 300px;
     min-width: 1920px;
     background-color: #f13c6e;
 }
