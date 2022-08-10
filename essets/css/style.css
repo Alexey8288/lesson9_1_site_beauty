@@ -74,20 +74,58 @@ a {
 
 .logo__link {}
 
-.logo__image {}
+.logo__image {
+    position: absolute;
+  
+        left: 400px;
+        top: 70px;
+
+
+}
 
 .logo__title {
+position: absolute;
+    width: 158px;
+    height: 39px;
+    left: 505px;
+    top: 91px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
     letter-spacing: 0.1em;
-    color: #F13C6E;
 
+    color: #F13C6E;
 }
 
 .feedback {}
 
-.feefback__phone {}
+.feefback__phone {
+position: absolute;
+    width: 127px;
+    height: 19px;
+    left: 1178px;
+    top: 100px;
+
+
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.feefback__button {
+position: absolute;
+    width: 117px;
+    height: 15px;
+    left: 1372px;
+    top: 102px;
+
+     font-size: 14px;
+    line-height: 16px;
+
+    color: #000000;
+
+}
 
 .container3 {
     min-height: 79px;
@@ -123,8 +161,23 @@ a {
 
 }
 
-.main {
+
+
+
+.main {}
+
+.container-super {
     min-height: 300px;
     min-width: 1920px;
     background-color: #f13c6e;
 }
+
+.container-super__title {}
+
+.container-super__description {}
+
+.container-super__button {}
+
+.container-super__background {}
+
+.container-super__background-image {}
