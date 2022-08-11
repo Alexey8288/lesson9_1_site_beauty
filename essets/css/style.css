@@ -151,7 +151,6 @@ a {
     font-size: 16px;
     line-height: 19px;
     color: #000000;
-
 }
 
 .main {}
@@ -161,7 +160,6 @@ a {
     min-width: 1920px;
     background-color: #f13c6e;
     background-image: url(../img/Background1.png);
-
     /* центрирует */
     background-position: 50% 50%;
     /* полностью вписывает картинку */
@@ -175,7 +173,6 @@ a {
     height: 44px;
     left: 405px;
     top: 409px;
-
 
     font-weight: 700;
     font-size: 48px;
@@ -210,11 +207,9 @@ a {
 }
 
 .container-special {
-
     min-height: 2000px;
     min-width: 1920px;
     background-color: #efefef;
-
 }
 
 .container-all {
@@ -223,10 +218,6 @@ a {
     /* padding: 0 20px; */
     /* ставим контейнер по середине */
     margin: 0 auto;
-    /* background-color: white; */
-    background-color: green;
-    /* временно */
-    height: 1900px;
 }
 
 .container-special__title {
@@ -275,7 +266,6 @@ a {
     width: 195px;
     margin: 0 auto;
     margin-bottom: 20px;
-
 }
 
 .container-special__description-text {
@@ -319,6 +309,54 @@ a {
     background-color: #efefef;
 }
 
-.container-special__bonus {}
+.container-special__bonus {
+    height: 212px;
+    width: 1110px;
+    background-color: #efefef;
+    display: flex;
+    justify-content: space-between;
+}
 
-.container-special__bonus-box1 {}
+.container-special__bonus-box1 {
+    height: 212px;
+    width: 540px;
+    background-color: blue;
+}
+
+.container-special__impuls {
+    height: 357px;
+    width: 1110px;
+    background-color: yellow;
+}
+
+.container-special__nedavno {
+    height: 147px;
+    width: 1110px;
+    background-color: #efefef;
+}
+
+.container-special__univers2 {
+    height: 81px;
+    width: 1110px;
+    background-color: #efefef;
+}
+
+.container-popular {
+    height: 373px;
+    width: 1920px;
+    background-color: red;
+}
+
+.footer {}
+
+.footer-box1 {
+    height: 120px;
+    width: 1920px;
+    background-color: #ffffff;
+}
+
+.footer-box2 {
+    height: 64px;
+    width: 1920px;
+    background-color: #efefef;
+}
