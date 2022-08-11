@@ -26,8 +26,6 @@ a {
     min-width: 1920px;
     background-color: #efefef;
 }
-
-
 .navbar-secondary {}
 
 
@@ -45,7 +43,6 @@ a {
     /* ставим текст по середине по горизонтали */
     justify-content: center;
     padding-top: 15px;
-
 }
 
 .navbar-secondary__item {}
@@ -66,8 +63,6 @@ a {
 
     /* ставим текст по середине по горизонтали */
     /* justify-content: center; */
-
-
 }
 
 .logo {}
@@ -79,8 +74,6 @@ a {
 
     left: 400px;
     top: 70px;
-
-
 }
 
 .logo__title {
@@ -106,7 +99,6 @@ a {
     height: 19px;
     left: 1178px;
     top: 100px;
-
 
     font-size: 16px;
     line-height: 19px;
@@ -161,9 +153,6 @@ a {
 
 }
 
-
-
-
 .main {}
 
 .container-super {
@@ -212,7 +201,6 @@ a {
     left: 432px;
     top: 632px;
 
-
     font-size: 14px;
     line-height: 16px;
     text-align: center;
@@ -220,15 +208,11 @@ a {
     color: #FFFFFF;
 }
 
-
-
 .container-special {
 
     min-height: 2000px;
     min-width: 1920px;
     background-color: #efefef;
-
-
 }
 
 .container-all {
@@ -241,7 +225,6 @@ a {
     /* временно */
     height: 1900px;
 }
-
 
 .container-special__title {
     /* position: absolute;
@@ -262,7 +245,7 @@ a {
 .container-special__box4x {
     max-height: 363px;
     max-width: 1110px;
-    background-color: aqua;
+    background-color: #efefef;
     display: flex;
     justify-content: space-between;
 }
@@ -270,7 +253,7 @@ a {
 .container-special__box1x {
     height: 363px;
     width: 255px;
-    background-color: yellow;
+    background-color: #ffffff;
     padding-top: 30px;
 }
 
@@ -281,16 +264,18 @@ a {
     margin: 0 auto;
     height: 166px;
     width: 125px;
+    margin-bottom: 20px;
 }
 
 .container-special__description {
     height: 33px;
     width: 195px;
     margin: 0 auto;
+    margin-bottom: 20px;
 
 }
 
-.container-special__description {
+.container-special__description-text {
     font-size: 14px;
     line-height: 20px;
     /* текст по центру */
@@ -302,6 +287,7 @@ a {
     height: 19px;
     width: 80px;
     margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 .container-special__price-text {
@@ -320,6 +306,7 @@ a {
     background-color: #f13c6e;
     /* закругления на углах */
         border-radius: 40px;
+        margin-bottom: 25px;
 }
 
 .container-special__button-link {}
