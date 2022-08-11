@@ -337,8 +337,25 @@ a {
     height: 119px;
     width: 25%;
     background-color: orange;
-   justify-content: center;
-   posi
+    /* display: block; */
+   /* justify-content: center;
+    align-items: center; */
+    /* margin: auto; */
+border: 1px solid #efefef;
+
+
+}
+
+.container-special__impuls-image {
+/* делаем строчный img элемент блочным */
+    display: block;
+    /* ставим по центру */
+    margin: auto;
+
+            /* margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            margin-bottom: auto; */
 
 }
 
