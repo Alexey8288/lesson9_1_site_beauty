@@ -283,29 +283,44 @@ a {
     height: 166px;
     width: 125px;
 }
+
 .container-special__description {
-height: 33px;
+    height: 33px;
     width: 195px;
     margin: 0 auto;
 
 }
 
 .container-special__description {
-        font-size: 14px;
-        line-height: 20px;
-        text-align: center;
-            color: #333333;
+    font-size: 14px;
+    line-height: 20px;
+    /* текст по центру */
+    text-align: center;
+    color: #333333;
 }
 
 .container-special__price {
     height: 19px;
-        width: 80px;
-        margin: 0 auto;
+    width: 80px;
+    margin: 0 auto;
 }
 
-.container-special__price-text {}
+.container-special__price-text {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
 
 
-.container-special__button {}
+.container-special__button {
+    height: 35px;
+        width: 130px;
+    margin: 0 auto;
+    background-color: #f13c6e;
+    /* закругления на углах */
+        border-radius: 40px;
+}
 
 .container-special__button-link {}
