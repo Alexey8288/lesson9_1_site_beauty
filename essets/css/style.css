@@ -108,8 +108,8 @@ a {
 
 .feefback__button {
     position: absolute;
-    width: 117px;
-    height: 15px;
+    /* width: 117px;
+    height: 15px; */
     left: 1372px;
     top: 102px;
 
@@ -329,7 +329,7 @@ a {
     display: flex;
     /* gap: 5px; */
     flex-wrap: wrap;
- 
+
 
 }
 
@@ -338,24 +338,19 @@ a {
     width: 25%;
     background-color: #ffffff;
     /* display: block; */
-   /* justify-content: center;
+    /* justify-content: center;
     align-items: center; */
     /* margin: auto; */
-border: 1px solid #efefef;
-
+    border: 1px solid #efefef;
 
 }
 
 .container-special__impuls-image {
-/* делаем строчный img элемент блочным */
+    /* делаем строчный img элемент блочным */
     display: block;
     /* ставим по центру */
     margin: auto;
-
-            /* margin-left: auto;
-            margin-right: auto;
-            margin-top: 20px;
-            margin-bottom: auto; */
+    margin-top: 33px;
 
 }
 
@@ -386,8 +381,85 @@ border: 1px solid #efefef;
     background-color: #ffffff;
 }
 
+.footer-box1__insta {}
+
+.footer-box1__insta-phone {
+
+    position: absolute;
+        width: 127px;
+        height: 19px;
+        left: 1178px;
+        top: 3145px;
+    
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+                color: #000000;
+}
+
+.footer-box1__insta-callback {
+    /* position: absolute;
+        width: 117px;
+            height: 15px;
+        left: 1372px;
+        top: 3147px;
+        border-top: 2px solid #efefef;
+        background-color: #F13C6E; */
+
+}
+
+.footer-box1__insta-callback-button {
+    position: absolute;
+        /* width: 117px;
+        height: 15px; */
+        left: 1372px;
+        top: 3147px;
+    
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+    
+        color: #000000;
+}
+
+
 .footer-box2 {
     height: 64px;
     width: 1920px;
     background-color: #efefef;
+}
+
+.footer-box2__name {
+    position: absolute;
+    width: 584px;
+    height: 14px;
+    left: 405px;
+    top: 3240px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #828282;
+}
+
+.footer-box2__copyright {
+    position: absolute;
+    width: 181px;
+    height: 14px;
+    left: 1334px;
+    top: 3240px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: right;
+    color: #828282;
 }
