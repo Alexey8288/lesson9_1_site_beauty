@@ -207,7 +207,6 @@ a {
 }
 
 .container-special {
-    min-height: 2000px;
     min-width: 1920px;
     background-color: #efefef;
 }
@@ -327,7 +326,22 @@ a {
     height: 357px;
     width: 1110px;
     background-color: yellow;
+    display: flex;
+    /* gap: 5px; */
+    flex-wrap: wrap;
+ 
+
 }
+
+.container-special__impuls-item {
+    height: 119px;
+    width: 25%;
+    background-color: orange;
+   justify-content: center;
+   posi
+
+}
+
 
 .container-special__nedavno {
     height: 147px;
