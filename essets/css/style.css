@@ -207,62 +207,105 @@ a {
 
 .container-super__button {
     position: absolute;
-        width: 117px;
-        height: 15px;
-        left: 432px;
-        top: 632px;
-    
+    width: 117px;
+    height: 15px;
+    left: 432px;
+    top: 632px;
 
-        font-size: 14px;
-        line-height: 16px;
-        text-align: center;
-        letter-spacing: 0.05em;
-            color: #FFFFFF;
+
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
 }
 
 
 
 .container-special {
 
-        min-height: 2000px;
-            min-width: 1920px;
-            background-color: #efefef;
+    min-height: 2000px;
+    min-width: 1920px;
+    background-color: #efefef;
 
 
 }
 
 .container-all {
-/* прибавляем к размеру блока + padding 1110 + 20 + 20 */
-    max-width: 1150px;
-    padding: 0 20px;
+    /* прибавляем к размеру блока + padding 1110 + 20 + 20 */
+    max-width: 1110px;
+    /* padding: 0 20px; */
     /* ставим контейнер по середине */
     margin: 0 auto;
-background-color: white;
-/* временно */
-height: 1900px;
+    background-color: white;
+    /* временно */
+    height: 1900px;
 }
 
 
 .container-special__title {
-    position: absolute;
+    /* position: absolute;
         width: 319px;
         height: 29px;
         left: 405px;
         top: 933px;
-  
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 28px;
-     
-        color: #000000;
+   */
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    background-color: #efefef;
+    color: #000000;
+    padding-top: 80px;
+    padding-bottom: 38px;
 }
 
-.container-special__box4x {}
+.container-special__box4x {
+    max-height: 363px;
+    max-width: 1110px;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
 
-.container-special__image {}
+}
 
-.container-special__description {}
+.container-special__box1x {
+    height: 363px;
+    width: 255px;
+    background-color: yellow;
+    padding-top: 30px;
+}
 
-.price {}
+.container-special__image {
+    /* делаем строчный img элемент блочным */
+    display: block;
+    /* ставим по центру */
+    margin: 0 auto;
+    height: 166px;
+    width: 125px;
+}
+.container-special__description {
+height: 33px;
+    width: 195px;
+    margin: 0 auto;
 
-.container-special__box4x-button {}
+}
+
+.container-special__description {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+            color: #333333;
+}
+
+.container-special__price {
+    height: 19px;
+        width: 80px;
+        margin: 0 auto;
+}
+
+.container-special__price-text {}
+
+
+.container-special__button {}
+
+.container-special__button-link {}
