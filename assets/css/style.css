@@ -112,51 +112,53 @@ a {
 
 .logo {}
 
-.logo__link {}
+.logo__link {
+    /* ставим в один ряд, все лишние пробелы исчезли */
+    display: flex;
+    /* ставим текст по середине по высоте */
+    align-items: center;
+    /* растояние между элементами */
+    gap: 20px;
+}
 
 .logo__image {}
 
 .logo__title {
-    /* position: absolute;
-    width: 158px;
-    height: 39px;
-    left: 505px;
-    top: 91px; */
-
+    font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
     letter-spacing: 0.1em;
-
-    color: #F13C6E;
+    color: #f13C6E;
 }
 
 .feedback {}
 
 .feefback__phone {
-    /* position: absolute;
-    width: 127px;
-    height: 19px;
-    left: 1178px;
-    top: 100px; */
-
+    font-style: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     color: #000000;
 }
 
 .feefback__button {
-    /* position: absolute;
-    width: 117px;
-    height: 15px;
-    left: 1372px;
-    top: 102px; */
 
+    font-style: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 16px;
 
     color: #000000;
 
+    /* нужно всегда задавать min или ширину или высоту кнопки */
+    min-width: 170px;
+    height: 40px;
+
+    background: #FFFFFF;
+
+    border: 2px solid #F13C6E;
+    border-radius: 40px;
 }
 
 
