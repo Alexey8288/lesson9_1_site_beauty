@@ -159,6 +159,10 @@ a {
 .navbar-primary {
     padding-top: 1em;
     padding-bottom: 1em;
+    background-color: #FFFFFF;
+    /* только верхний border */
+    border-top: 1px solid #efefef;
+
 }
 
 .navbar-primary__list {
