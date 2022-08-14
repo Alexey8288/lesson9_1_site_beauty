@@ -54,9 +54,12 @@ a {
     min-height: 50px;
     /* ставим в один ряд все блоки*/
     display: flex;
-     /* ставим текст по середине по ширине */
+    /* ставим текст по середине по ширине */
     align-items: center;
-   }
+    /* для мобильных версий, чтобы был отступ */
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
 
 
 .navbar-secondary__list {
@@ -67,12 +70,16 @@ a {
     /* разрешает перенос, в случае уменьшения экрана */
     flex-wrap: wrap;
     /* расстояние между словами в navbar */
-    column-gap: 30px;
+    gap: 5px 30px;
     /* ставим текст по середине по высоте */
     align-items: center;
     /* ставим текст по середине по ширине */
     justify-content: center;
+
+
     /* padding-top: 15px; */
+
+
 }
 
 .navbar-secondary__item {}
@@ -84,43 +91,33 @@ a {
 }
 
 .container--logo {
-padding-top: 20px;
-padding-bottom: 20px;
-background-color: #ffffff;
-/* чтобы все элементы были в один ряд по горизонтали */
-/* ставит в ряд картинку и текст */
-display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #ffffff;
+    /* чтобы все элементы были в один ряд по горизонтали */
+    /* ставит в ряд картинку и текст */
+    display: flex;
+    /* расставляет по внешним краям блока */
+    justify-content: space-between;
+    /* ставим текст по середине по высоте */
+    align-items: center;
+    /* на всякий случай растояние между блоками */
+    gap: 40px;
 }
 
-
-/* 5555555555555 */
-/* .container2 { */
-    /* min-height: 120px; */
-    /* min-width: 1920px; */
-    /* background-color: #ffffff; */
-    /* ставит в ряд картинку и текст */
-    /* display: flex; */
-    /* gap: 20px; */
-
-    /* ставим текст по середине по горизонтали */
-    /* justify-content: center; */
-    /* 5555555555555555555 */
-/* } */
 
 .logo {}
 
 .logo__link {}
 
-.logo__image {
-
-}
+.logo__image {}
 
 .logo__title {
-    position: absolute;
+    /* position: absolute;
     width: 158px;
     height: 39px;
     left: 505px;
-    top: 91px;
+    top: 91px; */
 
     font-weight: 700;
     font-size: 36px;
@@ -133,11 +130,11 @@ display: flex;
 .feedback {}
 
 .feefback__phone {
-    position: absolute;
+    /* position: absolute;
     width: 127px;
     height: 19px;
     left: 1178px;
-    top: 100px;
+    top: 100px; */
 
     font-size: 16px;
     line-height: 19px;
@@ -145,11 +142,11 @@ display: flex;
 }
 
 .feefback__button {
-    position: absolute;
-    /* width: 117px;
-    height: 15px; */
+    /* position: absolute;
+    width: 117px;
+    height: 15px;
     left: 1372px;
-    top: 102px;
+    top: 102px; */
 
     font-size: 14px;
     line-height: 16px;
@@ -157,6 +154,7 @@ display: flex;
     color: #000000;
 
 }
+
 
 .container3 {
     min-height: 79px;
