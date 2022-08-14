@@ -68,17 +68,12 @@ a {
     display: flex;
     /* разрешает перенос, в случае уменьшения экрана */
     flex-wrap: wrap;
-    /* расстояние между словами в navbar */
+    /* расстояние между словами в navbar, ширина, высота*/
     gap: 5px 30px;
     /* ставим текст по середине по высоте */
     align-items: center;
     /* ставим текст по середине по ширине */
     justify-content: center;
-
-
-    /* padding-top: 15px; */
-
-
 }
 
 .navbar-secondary__item {}
@@ -101,16 +96,15 @@ a {
     /* чтобы все элементы были в один ряд по горизонтали */
     /* ставит в ряд картинку и текст */
     display: flex;
+    /* разрешает перенос, в случае уменьшения экрана */
+    flex-wrap: wrap;
     /* расставляет по внешним краям блока */
     justify-content: space-between;
     /* ставим текст по середине по высоте */
     align-items: center;
-    /* на всякий случай растояние между блоками */
-    gap: 40px;
+    /* на всякий случай растояние между блоками, ширина, высота */
+    gap: 10px 40px;
 }
-
-
-.logo {}
 
 .logo__link {
     /* ставим в один ряд */
@@ -120,8 +114,6 @@ a {
     /* растояние между элементами */
     gap: 20px;
 }
-
-.logo__image {}
 
 .logo__title {
     font-style: normal;
@@ -133,13 +125,12 @@ a {
 }
 
 .feedback {
-/* ставим в один ряд */
+    /* ставим в один ряд */
     display: flex;
     /* ставим текст по середине по высоте */
     align-items: center;
     /* растояние между элементами */
     gap: 40px;
-
 }
 
 .feefback__phone {
@@ -151,32 +142,25 @@ a {
 }
 
 .feefback__button {
-
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-
     color: #000000;
 
     /* нужно всегда задавать min ширину или высоту кнопки */
     min-width: 170px;
     height: 40px;
-
     background: #FFFFFF;
     border: 2px solid #F13C6E;
     border-radius: 40px;
 }
 
+.navbar-primary {
+    padding-top: 1em;
+    padding-bottom: 1em;
 
-.container3 {
-    min-height: 79px;
-    min-width: 1920px;
-    background-color: #ffffff;
-    border-top: 2px solid #efefef;
 }
-
-.navbar-primary {}
 
 .navbar-primary__list {
     /* убираем точки слева, делаем его не лист */
@@ -185,18 +169,19 @@ a {
     display: flex;
     /* разрешает перенос, в случае уменьшения экрана */
     flex-wrap: wrap;
-    /* расстояние между словами в navbar */
-    column-gap: 40px;
     /* ставим текст по середине по вертикали */
-    /* align-items: center; */
+    align-items: center;
     /* ставим текст по середине по горизонтали */
     justify-content: center;
-    padding-top: 25px;
+    /* расстояние между словами в navbar, ширина, высота*/
+    gap: 5px 40px;
 }
 
 .navbar-primary__item {}
 
 .navbar-primary__link {
+    font-style: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     color: #000000;
