@@ -10,11 +10,8 @@
 }
 
 html {
-    /* ставим по умолчании жирность текста */
-    font-weight: 400;
     /* размер в html используется для rem */
     font-size: 16px;
-
 }
 
 body {
@@ -24,6 +21,8 @@ body {
     /* font-size: 14px; */
     /* ставим font-size в rem (14/16=0.875) */
     font-size: 0.875rem;
+    /* ставим по умолчании жирность текста */
+    font-weight: 400;
     /* цвет текста */
     color: #333333;
     /* фон страницы */
@@ -49,7 +48,7 @@ a {
 }
 
 .navbar-secondary {
-    background: red;
+    background: #efefef;
     /* укажем мин высоту */
     min-height: 50px;
     /* ставим в один ряд все блоки*/
@@ -88,6 +87,11 @@ a {
     font-size: 14px;
     line-height: 16px;
     color: #333333;
+}
+
+.navbar-info {
+    background-color: #ffffff;
+
 }
 
 .container--logo {
