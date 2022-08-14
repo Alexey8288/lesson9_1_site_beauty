@@ -159,7 +159,6 @@ a {
 .navbar-primary {
     padding-top: 1em;
     padding-bottom: 1em;
-
 }
 
 .navbar-primary__list {
@@ -192,13 +191,13 @@ a {
 .container-super {
     min-height: 604px;
     min-width: 1920px;
-    /* background-color: #f13c6e; */
-    /* background-image: url(../img/Background1.png); */
+    background-color: #f13c6e;
+    background-image: url(../img/Background1.png);
     /* центрирует */
     background-position: 50% 50%;
     /* полностью вписывает картинку */
     background-size: cover;
-    bg
+    
 }
 
 .container-super__title {
