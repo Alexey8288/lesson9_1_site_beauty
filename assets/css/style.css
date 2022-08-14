@@ -370,7 +370,7 @@ a {
 .container-popular {
     height: 373px;
     width: 1920px;
-    background-color: red;
+    background-color: white;
 }
 
 .footer {}
@@ -379,6 +379,7 @@ a {
     height: 120px;
     width: 1920px;
     background-color: #ffffff;
+    border-top: 2px solid #efefef;
 }
 
 .footer-box1__insta {}
