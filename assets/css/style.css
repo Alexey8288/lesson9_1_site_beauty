@@ -1,4 +1,7 @@
-* {
+/* Обязательно так указывать!!! */
+*,
+::after,
+::before {
     box-sizing: border-box;
     /* сбрасывает все внешние отступы */
     margin: 0;
@@ -7,43 +10,69 @@
 }
 
 html {
-    /* добавляем google fonts */
-    font-family: 'Roboto', sans-serif;
     /* ставим по умолчании жирность текста */
     font-weight: 400;
-    /* line-height: 1.625; */
+    /* размер в html используется для rem */
+    font-size: 16px;
+
+}
+
+body {
+    /* в body прописывем все что наследуется */
+    /* добавляем google fonts */
+    font-family: 'Roboto', sans-serif;
+    /* font-size: 14px; */
+    /* ставим font-size в rem (14/16=0.875) */
+    font-size: 0.875rem;
+    /* цвет текста */
+    color: #333333;
+    /* фон страницы */
+    background: #efefef;
 }
 
 a {
     /* убираем подчеркивание на ссылках */
     text-decoration: none;
+    /* цвет наследовать из body #333333*/
+    color: inherit;
 }
 
 .header {}
 
-.container1 {
-    min-height: 50px;
-    min-width: 1920px;
-    background-color: #efefef;
+.container {
+    /* обязательно учитывать padding (1110+20+20) */
+    max-width: 1150px;
+    /* обязательно всегда ставим */
+    padding: 0 20px;
+    /* ставит по центру (по ширине) */
+    margin: 0 auto;
 }
 
-.navbar-secondary {}
+.navbar-secondary {
+    background: red;
+    /* укажем мин высоту */
+    min-height: 50px;
+    /* ставим в один ряд все блоки*/
+    display: flex;
+     /* ставим текст по середине по ширине */
+    align-items: center;
+   }
 
 
 .navbar-secondary__list {
     /* убираем точки слева, делаем его не лист */
     list-style-type: none;
-    /* ставим в один ряд */
+    /* ставим в один ряд весь список */
     display: flex;
     /* разрешает перенос, в случае уменьшения экрана */
     flex-wrap: wrap;
     /* расстояние между словами в navbar */
     column-gap: 30px;
-    /* ставим текст по середине по вертикали */
+    /* ставим текст по середине по высоте */
     align-items: center;
-    /* ставим текст по середине по горизонтали */
+    /* ставим текст по середине по ширине */
     justify-content: center;
-    padding-top: 15px;
+    /* padding-top: 15px; */
 }
 
 .navbar-secondary__item {}
@@ -54,27 +83,36 @@ a {
     color: #333333;
 }
 
-.container2 {
-    min-height: 120px;
-    min-width: 1920px;
-    background-color: #ffffff;
+.container--logo {
+padding-top: 20px;
+padding-bottom: 20px;
+background-color: #ffffff;
+/* чтобы все элементы были в один ряд по горизонтали */
+/* ставит в ряд картинку и текст */
+display: flex;
+}
+
+
+/* 5555555555555 */
+/* .container2 { */
+    /* min-height: 120px; */
+    /* min-width: 1920px; */
+    /* background-color: #ffffff; */
     /* ставит в ряд картинку и текст */
-    display: flex;
-    gap: 20px;
+    /* display: flex; */
+    /* gap: 20px; */
 
     /* ставим текст по середине по горизонтали */
     /* justify-content: center; */
-}
+    /* 5555555555555555555 */
+/* } */
 
 .logo {}
 
 .logo__link {}
 
 .logo__image {
-    position: absolute;
 
-    left: 400px;
-    top: 70px;
 }
 
 .logo__title {
@@ -158,8 +196,8 @@ a {
 .container-super {
     min-height: 604px;
     min-width: 1920px;
-    background-color: #f13c6e;
-    background-image: url(../img/Background1.png);
+    /* background-color: #f13c6e; */
+    /* background-image: url(../img/Background1.png); */
     /* центрирует */
     background-position: 50% 50%;
     /* полностью вписывает картинку */
@@ -387,17 +425,17 @@ a {
 .footer-box1__insta-phone {
 
     position: absolute;
-        width: 127px;
-        height: 19px;
-        left: 1178px;
-        top: 3145px;
-    
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
-                color: #000000;
+    width: 127px;
+    height: 19px;
+    left: 1178px;
+    top: 3145px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
 }
 
 .footer-box1__insta-callback {
@@ -413,18 +451,18 @@ a {
 
 .footer-box1__insta-callback-button {
     position: absolute;
-        /* width: 117px;
+    /* width: 117px;
         height: 15px; */
-        left: 1372px;
-        top: 3147px;
-    
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 16px;
-    
-        color: #000000;
+    left: 1372px;
+    top: 3147px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #000000;
 }
 
 
