@@ -113,7 +113,7 @@ a {
 .logo {}
 
 .logo__link {
-    /* ставим в один ряд, все лишние пробелы исчезли */
+    /* ставим в один ряд */
     display: flex;
     /* ставим текст по середине по высоте */
     align-items: center;
@@ -132,7 +132,15 @@ a {
     color: #f13C6E;
 }
 
-.feedback {}
+.feedback {
+/* ставим в один ряд */
+    display: flex;
+    /* ставим текст по середине по высоте */
+    align-items: center;
+    /* растояние между элементами */
+    gap: 40px;
+
+}
 
 .feefback__phone {
     font-style: normal;
@@ -151,12 +159,11 @@ a {
 
     color: #000000;
 
-    /* нужно всегда задавать min или ширину или высоту кнопки */
+    /* нужно всегда задавать min ширину или высоту кнопки */
     min-width: 170px;
     height: 40px;
 
     background: #FFFFFF;
-
     border: 2px solid #F13C6E;
     border-radius: 40px;
 }
