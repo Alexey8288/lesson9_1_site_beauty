@@ -299,7 +299,7 @@ a {
 
 .offers {
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
 }
 
 .offers__title {
@@ -311,7 +311,11 @@ a {
 
 .offers__content {
     /* ставим горизонтально */
-    display: flex;
+    /* display: flex; */
+
+    display: grid;
+    /* ставим горизонтально, делим на 4 части по 1 fr, одинаково */
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
 
 
@@ -322,17 +326,20 @@ a {
     background-color: #ffffff;
     /* задаем одинаковое соотношение размеры всех items */
     /* чтобы при добавлении текста ничего не смещалось */
-    flex-grow: 1;
+
+    /* мы убрали flex */
+    /* flex-grow: 1; */
     /* обязательно указываем базисный размер, 1/4 */
-    flex-basis: 25%;
-    flex-shrink: 0;
+    /* gap 20 * 3 / 4 = 15px */
+    /* flex-basis: calc(25% - 22.5px); */
+    /* flex-shrink: 0; */
 
     padding: 25px;
     /* обязательно */
     display: flex;
     /* ставим по вертикали */
     flex-direction: column;
-/* ставит по центру все блоки, если flex */
+    /* ставит по центру все блоки, если flex */
     align-items: center;
     /* отступы между блоками */
     gap: 20px;
@@ -369,15 +376,46 @@ a {
 
 
 
+.submit {
+    /* padding-top: 100px; */
+    padding-bottom: 100px;
+}
 
 
-.container {}
+.container--submit {
+    /* ставит блоки в линию по горизонтали */
+    /* display: flex; */
 
-.container--submit {}
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* расстояние между блоками */
+    gap: 30px;
 
-.subscribe {}
+}
 
-.location {}
+.subscribe {
+    background-color: #f13c6e;
+    min-height: 210px;
+
+    /* не используем */
+    /* обязательно указываем базисный размер, 1/2 */
+    /* flex-basis: calc(50% - 15px); */
+    /* одинаковая часть распределения места */
+    /* flex-grow: 1; */
+    /* flex-shrink: 0; */
+}
+
+.location {
+    background-color: #f13c6e;
+    min-height: 210px;
+
+/* не используем */
+    /* обязательно указываем базисный размер, 1/2 */
+    /* flex-basis: 50%; */
+    /* одинаковая часть распределения места */
+    /* flex-grow: 1; */
+    /* flex-shrink: 0; */
+}
 
 
 
