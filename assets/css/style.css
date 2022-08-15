@@ -39,6 +39,7 @@ a {
 .header {}
 
 .container {
+    /* высоту не задаем, она растягивается от контента */
     /* обязательно учитывать padding (1110+20+20) */
     max-width: 1150px;
     /* обязательно всегда ставим */
@@ -192,11 +193,20 @@ a {
 
 .main {}
 
-.hero {}
+.hero {
+  background-color: #f13c6e;
+   min-height: 604px;
+    /* ширину не задаем, она меняется от размера экрана */
+    padding-top: 192px;
+    padding-bottom: 192px;
+
+}
 
 .container {}
 
-.hero__content {}
+.hero__content {
+    min-width: 310px;
+}
 
 .hero__title {}
 
@@ -208,22 +218,9 @@ a {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 .container-super {
-    min-height: 604px;
-    min-width: 1920px;
-    background-color: #f13c6e;
+ 
+  
     background-image: url(../img/Background1.png);
     /* центрирует */
     background-position: 50% 50%;
