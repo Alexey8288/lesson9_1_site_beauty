@@ -192,6 +192,34 @@ a {
 
 .main {}
 
+.hero {}
+
+.container {}
+
+.hero__content {}
+
+.hero__title {}
+
+.hero__description {}
+
+.hero__actions {}
+
+.hero__links {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .container-super {
     min-height: 604px;
     min-width: 1920px;
