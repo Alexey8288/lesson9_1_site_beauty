@@ -150,15 +150,12 @@ a {
     /* остальные настройки в общем классе btn  */
 }
 
-
-
 .navbar-primary {
     padding-top: 1em;
     padding-bottom: 1em;
     background-color: #FFFFFF;
     /* только верхний border */
     border-top: 1px solid #efefef;
-
 }
 
 .navbar-primary__list {
@@ -194,7 +191,6 @@ a {
     /* ширину не задаем, она меняется от размера экрана */
     padding-top: 192px;
     padding-bottom: 192px;
-
 }
 
 .container {}
