@@ -187,7 +187,7 @@ a {
     background-color: #f13c6e;
     min-height: 604px;
     /* ширину не задаем, она меняется от размера экрана */
-    padding-top: 192px;
+    padding-top: 159px;
     padding-bottom: 192px;
     /* цвет можно поставить здесь, будет относится ко всему блоку */
     color: #FFFFFF;
@@ -199,11 +199,12 @@ a {
     max-width: 310px;
     /* высоту не задаем, она растягивается от контента */
     /* задаем свойство flex, чтобы указать отступы через gap */
-    display: flex;
+    /* display: flex; */
     /* ставит в столбик */
-    flex-direction: column;
+    /* flex-direction: column; */
     /* отступы */
-    gap: 40px;
+    /* gap: 40px; */
+    
 }
 
 .hero__title {
@@ -219,6 +220,8 @@ a {
     line-height: 20px;
     /* цвет стоит в общем блоке hero */
     /* color: #FFFFFF; */
+    padding-top: 9px;
+    padding-bottom: 44px;
 }
 
 .hero__actions {}
@@ -282,39 +285,11 @@ a {
 
 }
 
-.container-super__title {
-    position: absolute;
-    width: 308px;
-    height: 44px;
-    left: 405px;
-    top: 409px;
-
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 56px;
-    color: #FFFFFF;
-}
-
-.container-super__description {
-    position: absolute;
-    width: 308px;
-    height: 35px;
-    left: 405px;
-    top: 535px;
-
-    font-size: 14px;
-    line-height: 20px;
-    color: #FFFFFF;
-}
-
-
-
-
-
 
 .container-special {
     /* min-width: 1920px; */
     background-color: #efefef;
+    background-color: green;
 }
 
 .container-all {
