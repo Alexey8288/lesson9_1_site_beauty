@@ -143,6 +143,7 @@ a {
 }
 
 .feefback__button {
+    /* настройки button */
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -151,11 +152,14 @@ a {
     /* обязательно меняем из строчного в блочный */
     display: block;
     /* нужно всегда задавать min ширину или высоту кнопки */
-    min-width: 170px;
-    height: 40px;
+    /* лучше max-width min-height */
+    max-width: 170px;
+    min-height: 40px;
     background: #FFFFFF;
     border: 2px solid #F13C6E;
     border-radius: 40px;
+    /* внутренние отступы  */
+    padding: 0.25em 1em;
 }
 
 .navbar-primary {
@@ -217,25 +221,31 @@ a {
 .hero__actions {}
 
 .hero__button {
-/* обязательно меняем из строчного в блочный */
-    display: block;
+    /* настройки тега "а" */
+    /* обязательно меняем из строчного в блочный */
+    display: flex;
+    /* ставим текст по середине по вертикали */
+    align-items: center;
+    /* ставим текст по середине по горизонтали */
+    justify-content: center;
+
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-    /* центрирует по ширине*/
+    /* центрирует по ширине */
     text-align: center;
     letter-spacing: 0.05em;
     color: #FFFFFF;
-    
+
     /* всегда добавляем к ширине или высоте min */
-    width: 170px;
-    height: 40px;
+    /* лучше max-width min-height */
+    max-width: 170px;
+    min-height: 40px;
     background: #F13C6E;
     border: 2px solid #FFFFFF;
     border-radius: 40px;
     padding: 0.25em 1em;
-
 }
 
 
