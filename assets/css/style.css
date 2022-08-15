@@ -184,9 +184,24 @@ a {
 .main {}
 
 .hero {
-    background-color: #f13c6e;
-    min-height: 604px;
+  min-height: 604px;
     /* ширину не задаем, она меняется от размера экрана */
+
+
+    background-color: #f13c6e;
+
+    background-image: url(../img/Background1.png);
+    /* выключаем повторение */
+    background-repeat: no-repeat;
+        /* центрирует, выставляем по центру */
+        background-position: 50% 50%;
+        /* полностью вписывает картинку, если нужно */
+        background-size: cover;
+        /* или так, зависит от картинки */
+        /* background-size: contain; */
+
+
+  
     padding-top: 159px;
     padding-bottom: 192px;
     /* цвет можно поставить здесь, будет относится ко всему блоку */
@@ -197,6 +212,7 @@ a {
 
 .hero__content {
     max-width: 310px;
+    /* это способ 2 чтобы задать отступы, не обязательно */
     /* высоту не задаем, она растягивается от контента */
     /* задаем свойство flex, чтобы указать отступы через gap */
     /* display: flex; */
@@ -204,8 +220,7 @@ a {
     /* flex-direction: column; */
     /* отступы */
     /* gap: 40px; */
-    
-}
+    }
 
 .hero__title {
     font-weight: 700;
