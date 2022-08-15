@@ -143,23 +143,10 @@ a {
 }
 
 .feefback__button {
-    /* настройки button */
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
     color: #000000;
-    /* обязательно меняем из строчного в блочный */
-    display: block;
-    /* нужно всегда задавать min ширину или высоту кнопки */
-    /* лучше max-width min-height */
-    max-width: 170px;
-    min-height: 40px;
     background: #FFFFFF;
     border: 2px solid #F13C6E;
-    border-radius: 40px;
-    /* внутренние отступы  */
-    padding: 0.25em 1em;
+    /* остальные настройки в общем классе btn  */
 }
 
 .navbar-primary {
@@ -220,32 +207,38 @@ a {
 
 .hero__actions {}
 
-.hero__button {
-    /* настройки тега "а" */
+/* общий класс кнопок */
+.btn {
     /* обязательно меняем из строчного в блочный */
     display: flex;
-    /* ставим текст по середине по вертикали */
+    /* ставим текст по середине по высоте */
     align-items: center;
-    /* ставим текст по середине по горизонтали */
+    /* ставим текст по середине по ширине */
     justify-content: center;
-
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    /* центрирует по ширине */
+    /* центрирует по ширине, если не включен display: flex */
     text-align: center;
-    letter-spacing: 0.05em;
-    color: #FFFFFF;
-
     /* всегда добавляем к ширине или высоте min */
     /* лучше max-width min-height */
     max-width: 170px;
     min-height: 40px;
+    /* внутренние отступы  */
+    padding: 0.25em 1em;
+    /* закругления по углам */
+    border-radius: 40px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+      /* расстояние между буквами */
+    letter-spacing: 0.05em;
+
+}
+
+.hero__button {
+     color: #FFFFFF;
     background: #F13C6E;
     border: 2px solid #FFFFFF;
-    border-radius: 40px;
-    padding: 0.25em 1em;
+    /* остальные настройки в общем классе btn  */
 }
 
 
