@@ -18,9 +18,11 @@ body {
     /* в body прописывем все что наследуется */
     /* добавляем google fonts */
     font-family: 'Roboto', sans-serif;
+
     /* font-size: 14px; */
     /* ставим font-size в rem (14/16=0.875) */
     font-size: 0.875rem;
+    font-style: normal;
     /* ставим по умолчании жирность текста */
     font-weight: 400;
     /* цвет текста */
@@ -135,8 +137,6 @@ a {
 }
 
 .feefback__phone {
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     color: #000000;
@@ -176,8 +176,6 @@ a {
 .navbar-primary__item {}
 
 .navbar-primary__link {
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     color: #000000;
@@ -191,6 +189,8 @@ a {
     /* ширину не задаем, она меняется от размера экрана */
     padding-top: 192px;
     padding-bottom: 192px;
+    /* цвет можно поставить здесь, будет относится ко всему блоку */
+    color: #FFFFFF;
 }
 
 .container {}
@@ -198,11 +198,28 @@ a {
 .hero__content {
     max-width: 310px;
     /* высоту не задаем, она растягивается от контента */
+    /* задаем свойство flex, чтобы указать отступы через gap */
+    display: flex;
+    /* ставит в столбик */
+    flex-direction: column;
+    /* отступы */
+    gap: 40px;
 }
 
-.hero__title {}
+.hero__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    /* цвет стоит в общем блоке hero */
+    /* color: #FFFFFF; */
+}
 
-.hero__description {}
+.hero__description {
+    font-size: 14px;
+    line-height: 20px;
+    /* цвет стоит в общем блоке hero */
+    /* color: #FFFFFF; */
+}
 
 .hero__actions {}
 
@@ -257,7 +274,6 @@ a {
 
 
 .container-super {
-
     background-image: url(../img/Background1.png);
     /* центрирует */
     background-position: 50% 50%;
