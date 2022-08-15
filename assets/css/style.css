@@ -148,7 +148,8 @@ a {
     font-size: 14px;
     line-height: 16px;
     color: #000000;
-
+    /* обязательно меняем из строчного в блочный */
+    display: block;
     /* нужно всегда задавать min ширину или высоту кнопки */
     min-width: 170px;
     height: 40px;
@@ -194,8 +195,8 @@ a {
 .main {}
 
 .hero {
-  background-color: #f13c6e;
-   min-height: 604px;
+    background-color: #f13c6e;
+    min-height: 604px;
     /* ширину не задаем, она меняется от размера экрана */
     padding-top: 192px;
     padding-bottom: 192px;
@@ -205,7 +206,8 @@ a {
 .container {}
 
 .hero__content {
-    min-width: 310px;
+    max-width: 310px;
+    /* высоту не задаем, она растягивается от контента */
 }
 
 .hero__title {}
@@ -214,19 +216,42 @@ a {
 
 .hero__actions {}
 
-.hero__links {}
+.hero__button {
+/* обязательно меняем из строчного в блочный */
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    /* центрирует по ширине*/
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    
+    /* всегда добавляем к ширине или высоте min */
+    width: 170px;
+    height: 40px;
+    background: #F13C6E;
+    border: 2px solid #FFFFFF;
+    border-radius: 40px;
+    padding: 0.25em 1em;
+
+}
+
+
+
 
 
 
 .container-super {
- 
-  
+
+
     background-image: url(../img/Background1.png);
     /* центрирует */
     background-position: 50% 50%;
     /* полностью вписывает картинку */
     background-size: cover;
-    
+
 }
 
 .container-super__title {
@@ -254,22 +279,13 @@ a {
     color: #FFFFFF;
 }
 
-.container-super__button {
-    position: absolute;
-    width: 117px;
-    height: 15px;
-    left: 432px;
-    top: 632px;
 
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    letter-spacing: 0.05em;
-    color: #FFFFFF;
-}
+
+
+
 
 .container-special {
-    min-width: 1920px;
+    /* min-width: 1920px; */
     background-color: #efefef;
 }
 
