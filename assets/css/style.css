@@ -143,12 +143,12 @@ a {
 }
 
 /* этот класс уже можно не использовать, копия он же btn--secondary */
-.feefback__button {
-    color: #000000;
-    background: #FFFFFF;
-    border: 2px solid #F13C6E;
+/* .feefback__button { */
+    /* color: #000000; */
+    /* background: #FFFFFF; */
+    /* border: 2px solid #F13C6E; */
     /* остальные настройки в общем классе btn  */
-}
+/* } */
 
 .navbar-primary {
     padding-top: 1em;
@@ -201,8 +201,6 @@ a {
     /* цвет можно поставить здесь, будет относится ко всему блоку */
     color: #FFFFFF;
 }
-
-.container {}
 
 .hero__content {
     max-width: 310px;
@@ -276,12 +274,67 @@ a {
 }
 
 /* этот класс уже можно не использовать, копия он же btn--secondary */
-.hero__button {
-    color: #FFFFFF;
-    background: #F13C6E;
-    border: 2px solid #FFFFFF;
+/* /* .hero__button { */
+    /* color: #FFFFFF; */
+    /* background: #F13C6E; */
+    /* border: 2px solid #FFFFFF; */
     /* остальные настройки в общем классе btn  */
+/* } */
+
+.offers {
+
+
 }
+
+.offers__title {}
+
+.offers__content {
+    /* ставим горизонтально */
+    display: flex;
+gap: 30px;
+   
+
+
+}
+
+.offer-item {
+    background-color: #ffffff;
+    /* задаем одинаковое соотношение размеры всех items */
+    /* чтобы при добавлении текста ничего не смещалось */
+    flex-grow: 1;
+    /* обязательно указываем одинаковый базисный размер, в 4-х элементах */
+    flex-basis: 100px;
+    padding: 25px;
+    /* обязательно */
+    display: flex;
+    /* ставим по вертикали */
+    flex-direction: column;
+}
+
+.offer-item__title {}
+
+.offer-item__picture {}
+
+.offer-item__image {}
+
+.offer-item__price {}
+
+.offer-item__actions {}
+
+.offer-item__button {
+        color: #FFFFFF;
+            background: #F13C6E;
+            border: 2px solid #FFFFFF;
+            /* остальные настройки в общем классе btn  */
+}
+
+.btn {}
+
+.btn--sml {}
+
+
+
+
 
 
 
@@ -292,12 +345,12 @@ a {
     background-color: green;
 }
 
-.container-all {
+/* .container-all { */
     /* прибавляем к размеру блока + padding 1110 + 20 + 20 */
-    max-width: 1110px;
+    /* max-width: 1110px; */
     /* padding: 0 20px; */
     /* ставим контейнер по середине */
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 .container-special__title {
