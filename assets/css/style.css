@@ -184,24 +184,18 @@ a {
 .main {}
 
 .hero {
-  min-height: 604px;
+    min-height: 604px;
     /* ширину не задаем, она меняется от размера экрана */
-
-
     background-color: #f13c6e;
-
     background-image: url(../img/Background1.png);
     /* выключаем повторение */
     background-repeat: no-repeat;
-        /* центрирует, выставляем по центру */
-        background-position: 50% 50%;
-        /* полностью вписывает картинку, если нужно */
-        background-size: cover;
-        /* или так, зависит от картинки */
-        /* background-size: contain; */
-
-
-  
+    /* центрирует, выставляем по центру */
+    background-position: 50% 50%;
+    /* полностью вписывает картинку, если нужно */
+    background-size: cover;
+    /* или так, зависит от картинки */
+    /* background-size: contain; */
     padding-top: 159px;
     padding-bottom: 192px;
     /* цвет можно поставить здесь, будет относится ко всему блоку */
@@ -220,7 +214,7 @@ a {
     /* flex-direction: column; */
     /* отступы */
     /* gap: 40px; */
-    }
+}
 
 .hero__title {
     font-weight: 700;
@@ -290,15 +284,6 @@ a {
 }
 
 
-
-.container-super {
-    background-image: url(../img/Background1.png);
-    /* центрирует */
-    background-position: 50% 50%;
-    /* полностью вписывает картинку */
-    background-size: cover;
-
-}
 
 
 .container-special {
