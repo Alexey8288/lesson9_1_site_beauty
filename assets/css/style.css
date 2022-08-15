@@ -142,12 +142,15 @@ a {
     color: #000000;
 }
 
+/* этот класс уже можно не использовать, копия он же btn--secondary */
 .feefback__button {
     color: #000000;
     background: #FFFFFF;
     border: 2px solid #F13C6E;
     /* остальные настройки в общем классе btn  */
 }
+
+
 
 .navbar-primary {
     padding-top: 1em;
@@ -229,13 +232,27 @@ a {
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-      /* расстояние между буквами */
+    /* расстояние между буквами */
     letter-spacing: 0.05em;
-
 }
 
+.btn--primary {
+    color: #000000;
+    background: #FFFFFF;
+    border: 2px solid #F13C6E;
+    /* остальные настройки в общем классе btn  */
+}
+
+.btn--secondary {
+    color: #FFFFFF;
+    background: #F13C6E;
+    border: 2px solid #FFFFFF;
+    /* остальные настройки в общем классе btn  */
+}
+
+/* этот класс уже можно не использовать, копия он же btn--secondary */
 .hero__button {
-     color: #FFFFFF;
+    color: #FFFFFF;
     background: #F13C6E;
     border: 2px solid #FFFFFF;
     /* остальные настройки в общем классе btn  */
@@ -243,11 +260,7 @@ a {
 
 
 
-
-
-
 .container-super {
-
 
     background-image: url(../img/Background1.png);
     /* центрирует */
