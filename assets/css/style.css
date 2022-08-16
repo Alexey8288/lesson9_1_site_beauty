@@ -381,37 +381,25 @@ a {
     padding-bottom: 100px;
 }
 
-
 .container--submit {
     /* ставит блоки в линию по горизонтали */
     /* display: flex; */
-
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     /* расстояние между блоками */
     gap: 30px;
-
 }
 
 .subscribe {
     background-color: #f13c6e;
     min-height: 210px;
-
     display: flex;
     justify-content: space-between;
     gap: 30px;
-
     padding-top: 35px;
     padding-bottom: 35px;
     padding-left: 40px;
     padding-right: 50px;
-
-    /* не используем */
-    /* обязательно указываем базисный размер, 1/2 */
-    /* flex-basis: calc(50% - 15px); */
-    /* одинаковая часть распределения места */
-    /* flex-grow: 1; */
-    /* flex-shrink: 0; */
 }
 
 .subscribe-content {
@@ -448,18 +436,14 @@ a {
     /* text-align: center; */
     /* всегда добавляем к ширине или высоте min */
     /* лучше max-width min-height */
-
     width: 225px;
     height: 35px;
-
     /* внутренние отступы  */
     padding: 0.25em 1em;
-
     background: #FFFFFF;
     border: 2px solid #F13C6E;
     /* закругления по углам */
     border-radius: 30px;
-
     font-size: 14px;
     line-height: 16px;
     /* text-align: center; */
@@ -471,32 +455,20 @@ a {
     display: flex;
     /* ставим текст по середине по высоте */
     align-items: center;
-
 }
 
 .subscribe-picture__image {}
 
-
 .location {
     background-color: #f13c6e;
     min-height: 210px;
-
     display: flex;
     justify-content: space-between;
     gap: 30px;
-
     padding-top: 35px;
     padding-bottom: 35px;
     padding-left: 40px;
     padding-right: 50px;
-
-
-    /* не используем */
-    /* обязательно указываем базисный размер, 1/2 */
-    /* flex-basis: 50%; */
-    /* одинаковая часть распределения места */
-    /* flex-grow: 1; */
-    /* flex-shrink: 0; */
 }
 
 
@@ -511,14 +483,12 @@ a {
     color: #FFFFFF;
 }
 
-
-
 .location-content__discription {
     font-size: 14px;
     line-height: 20px;
     color: #FFFFFF;
-        margin-top: 25px;
-            margin-bottom: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .location-content__link {}
@@ -534,18 +504,14 @@ a {
     text-align: center;
     /* всегда добавляем к ширине или высоте min */
     /* лучше max-width min-height */
-   
     /* внутренние отступы  */
     padding: 0.25em 1em;
     /* закругления по углам */
-
     max-width: 170px;
     min-height: 35px;
-
     background: #F13C6E;
     border: 2px solid #FFFFFF;
     border-radius: 30px;
-
     font-size: 14px;
     line-height: 16px;
     text-align: center;
@@ -553,13 +519,16 @@ a {
 }
 
 .location-picture {
-        /* обязательно меняем из строчного в блочный */
-            display: flex;
-            /* ставим текст по середине по высоте */
-            align-items: center;
+    /* обязательно меняем из строчного в блочный */
+    display: flex;
+    /* ставим текст по середине по высоте */
+    align-items: center;
 }
 
 .location-picture__image {}
+
+
+
 
 
 
