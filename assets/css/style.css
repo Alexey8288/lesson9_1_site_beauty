@@ -414,7 +414,7 @@ a {
 }
 
 
-.subscribe-content__discription {
+.subscribe-content__description {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -483,7 +483,7 @@ a {
     color: #FFFFFF;
 }
 
-.location-content__discription {
+.location-content__description {
     font-size: 14px;
     line-height: 20px;
     color: #FFFFFF;
@@ -560,6 +560,8 @@ a {
     margin: auto;
     margin-top: 33px;
 }
+
+
 
 
 
