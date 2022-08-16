@@ -85,6 +85,7 @@ a {
     font-size: 14px;
     line-height: 16px;
     color: #333333;
+
 }
 
 .navbar-info {
@@ -125,6 +126,11 @@ a {
     line-height: 42px;
     letter-spacing: 0.1em;
     color: #f13C6E;
+    transition: 1s;
+}
+
+.logo__title:hover {
+    transform: scale(1.1);
 }
 
 .feedback {
@@ -771,27 +777,25 @@ a {
 .footer-box2 {
     height: 63px;
     background-color: #efefef;
-padding-top: 25px;
+    padding-top: 25px;
     padding-bottom: 25px;
 }
 
 
 .container--ft2 {
-display: flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .footer-box2__name {
-        font-size: 12px;
-        line-height: 14px;
-        color: #828282;
+    font-size: 12px;
+    line-height: 14px;
+    color: #828282;
 }
 
 .footer-box2__copyright {
-        font-size: 12px;
-        line-height: 14px;
-        color: #828282;
+    font-size: 12px;
+    line-height: 14px;
+    color: #828282;
 }
-
-
