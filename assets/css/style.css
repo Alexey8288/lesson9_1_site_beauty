@@ -397,6 +397,15 @@ a {
     background-color: #f13c6e;
     min-height: 210px;
 
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 40px;
+    padding-right: 50px;
+
     /* не используем */
     /* обязательно указываем базисный размер, 1/2 */
     /* flex-basis: calc(50% - 15px); */
@@ -405,17 +414,101 @@ a {
     /* flex-shrink: 0; */
 }
 
+.subscribe-content {
+    max-width: 250px;
+}
+
+.subscribe-content__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+
+.subscribe-content__discription {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.subscribe-content__mail {}
+
+.subscribe-content__button {
+    /* обязательно меняем из строчного в блочный */
+    display: flex;
+    /* ставим текст по середине по высоте */
+    align-items: center;
+    /* ставим текст по середине по ширине */
+    justify-content: center;
+    /* центрирует по ширине, если не включен display: flex */
+    /* text-align: center; */
+    /* всегда добавляем к ширине или высоте min */
+    /* лучше max-width min-height */
+
+
+    width: 225px;
+    height: 35px;
+
+
+    /* внутренние отступы  */
+    padding: 0.25em 1em;
+
+    background: #FFFFFF;
+    border: 2px solid #F13C6E;
+    /* закругления по углам */
+    border-radius: 30px;
+
+    font-size: 14px;
+    line-height: 16px;
+    /* text-align: center; */
+    color: #C4C4C4;
+}
+
+.btn {}
+
+.subscribe-picture {
+    /* обязательно меняем из строчного в блочный */
+    display: flex;
+    /* ставим текст по середине по высоте */
+    align-items: center;
+
+}
+
+.subscribe-picture__image {}
+
+
 .location {
     background-color: #f13c6e;
     min-height: 210px;
 
-/* не используем */
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 40px;
+    padding-right: 50px;
+
+
+    /* не используем */
     /* обязательно указываем базисный размер, 1/2 */
     /* flex-basis: 50%; */
     /* одинаковая часть распределения места */
     /* flex-grow: 1; */
     /* flex-shrink: 0; */
 }
+
+
+.location-content {
+    max-width: 250px;
+}
+
+.location-content__title {}
 
 
 
