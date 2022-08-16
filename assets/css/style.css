@@ -261,6 +261,18 @@ a {
     letter-spacing: 0.05em;
 }
 
+.activ:hover {
+
+    box-shadow: 0 0 7px #f13c6e;
+}
+
+.activ2:hover {
+
+    box-shadow: 0 0 7px #ffffff;
+}
+
+
+
 .btn--primary {
     color: #000000;
     background: #FFFFFF;
