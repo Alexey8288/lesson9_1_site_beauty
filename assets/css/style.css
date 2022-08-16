@@ -652,7 +652,7 @@ a {
     background-color: #ffffff;
     padding-top: 60px;
     padding-bottom: 60px;
-    border-bottom: 2px solid #efefef;
+    border-bottom: 1px solid #efefef;
 }
 
 .popular-box {
@@ -678,7 +678,7 @@ a {
 
 .popular-box__item-description {
     padding-top: 30px;
-    border-top: 2px solid #efefef;
+    border-top: 1px solid #efefef;
 
 
 
@@ -695,108 +695,64 @@ a {
 
 }
 
-
-
-
-
-
-
-
-
-.color {
-    height: 100px;
-    background-color: white;
-}
-
-
 .footer {}
+
+
 
 .footer-box1 {
     height: 120px;
-    width: 1920px;
     background-color: #ffffff;
-    border-top: 2px solid #efefef;
-}
 
-.footer-box1__insta {}
-
-.footer-box1__insta-phone {
-
-    position: absolute;
-    width: 127px;
-    height: 19px;
-    left: 1178px;
-    top: 3145px;
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #000000;
-}
-
-.footer-box1__insta-callback {
-    /* position: absolute;
-        width: 117px;
-            height: 15px;
-        left: 1372px;
-        top: 3147px;
-        border-top: 2px solid #efefef;
-        background-color: #F13C6E; */
+    padding-top: 20px;
+        padding-bottom: 20px;
+  
 
 }
 
-.footer-box1__insta-callback-button {
-    position: absolute;
-    /* width: 117px;
-        height: 15px; */
-    left: 1372px;
-    top: 3147px;
+.container--ft {
+  display: flex;
+ justify-content: space-between;
 
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-
-    color: #000000;
+    /* разрешает перенос, в случае уменьшения экрана */
+    flex-wrap: wrap;
+      align-items: center;
+   
+    /* ставим текст по середине по ширине */
+    /* justify-content: center; */
+    /* центрирует по ширине, если не включен display: flex */
+    /* text-align: center; */
+    /* ставим текст по середине по высоте */
+  
 }
 
+
+.footer-box1__insta {
+    display: flex;
+    gap: 20px;
+
+}
+
+.footer-box1__contacts {
+    display: flex;
+    gap: 40px;
+}
+
+.ffooter-box1__contacts-phone {}
+
+.footer-box1__contacts-callback {}
+
+.footer-box1__contacts-button {}
 
 .footer-box2 {
-    height: 64px;
-    width: 1920px;
     background-color: #efefef;
 }
 
-.footer-box2__name {
-    position: absolute;
-    width: 584px;
-    height: 14px;
-    left: 405px;
-    top: 3240px;
 
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    color: #828282;
-}
 
-.footer-box2__copyright {
-    position: absolute;
-    width: 181px;
-    height: 14px;
-    left: 1334px;
-    top: 3240px;
 
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    text-align: right;
-    color: #828282;
-}
+
+
+
+.footer-box2__name {}
+
+.footer-box2__copyright {}
