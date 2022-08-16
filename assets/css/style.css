@@ -151,8 +151,8 @@ a {
 /* } */
 
 .navbar-primary {
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 30px;
+    padding-bottom: 30px;
     background-color: #FFFFFF;
     /* только верхний border */
     border-top: 1px solid #efefef;
@@ -309,6 +309,7 @@ a {
     font-size: 24px;
     line-height: 28px;
     color: #000000;
+    margin-bottom: 39px;
 }
 
 .offers__content {
@@ -530,7 +531,7 @@ a {
 .location-picture__image {}
 
 .impuls {
-    margin-bottom: 100px;
+    margin-bottom: 79px;
 }
 
 
@@ -576,6 +577,7 @@ a {
     font-size: 24px;
     line-height: 28px;
     color: #000000;
+    margin-bottom: 39px;
 }
 
 .looked__content {
@@ -651,7 +653,7 @@ a {
     /* ширину не задаем, она меняется от размера экрана */
     background-color: #ffffff;
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
     border-bottom: 1px solid #efefef;
 }
 
@@ -673,11 +675,11 @@ a {
     font-size: 16px;
     line-height: 140.62%;
     color: #000000;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
 }
 
 .popular-box__item-description {
-    padding-top: 30px;
+    padding-top: 25px;
     border-top: 1px solid #efefef;
 
 
