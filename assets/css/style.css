@@ -1,801 +1,744 @@
-/* Обязательно так указывать!!! */
+@charset "UTF-8";
 *,
 ::after,
 ::before {
-    box-sizing: border-box;
-    /* сбрасывает все внешние отступы */
-    margin: 0;
-    /* сбрасывает все внутренние отступы */
-    padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    /* размер в html используется для rem */
-    font-size: 16px;
+  font-size: 16px;
 }
 
 body {
-    /* в body прописывем все что наследуется */
-    /* добавляем google fonts */
-    font-family: 'Roboto', sans-serif;
+  color: #333333;
+  background: #efefef;
 
-    /* font-size: 14px; */
-    /* ставим font-size в rem (14/16=0.875) */
-    font-size: 0.875rem;
-    font-style: normal;
-    /* ставим по умолчании жирность текста */
-    font-weight: 400;
-    /* цвет текста */
-    color: #333333;
-    /* фон страницы */
-    background: #efefef;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-style: normal;
 }
 
 a {
-    /* убираем подчеркивание на ссылках */
-    text-decoration: none;
-    /* цвет наследовать из body #333333*/
-    color: inherit;
+  text-decoration: none;
+
+  color: inherit;
 }
 
-.header {}
-
 .container {
-    /* высоту не задаем, она растягивается от контента */
-    /* обязательно учитывать padding (1110+20+20) */
-    max-width: 1150px;
-    /* обязательно всегда ставим */
-    padding: 0 20px;
-    /* ставит по центру (по ширине) */
-    margin: 0 auto;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .navbar-secondary {
-    background: #efefef;
-    /* укажем мин высоту */
-    min-height: 50px;
-    /* ставим в один ряд все блоки*/
-    display: flex;
-    /* ставим текст по середине по ширине */
-    align-items: center;
-    /* для мобильных версий, чтобы был отступ */
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
 
+  min-height: 50px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+  background: #efefef;
+}
 
 .navbar-secondary__list {
-    /* убираем точки слева, делаем его не лист */
-    list-style-type: none;
-    /* ставим в один ряд весь список */
-    display: flex;
-    /* разрешает перенос, в случае уменьшения экрана */
-    flex-wrap: wrap;
-    /* расстояние между словами в navbar, ширина, высота*/
-    gap: 5px 30px;
-    /* ставим текст по середине по высоте */
-    align-items: center;
-    /* ставим текст по середине по ширине */
-    justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  list-style-type: none;
+
+  gap: 5px 30px;
 }
 
-.navbar-secondary__item {}
-
 .navbar-secondary__link {
-    font-size: 14px;
-    line-height: 16px;
-    color: #333333;
+  color: #333333;
 
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .navbar-info {
-    background-color: #ffffff;
-
+  background-color: #ffffff;
 }
 
 .container--logo {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: #ffffff;
-    /* чтобы все элементы были в один ряд по горизонтали */
-    /* ставит в ряд картинку и текст */
-    display: flex;
-    /* разрешает перенос, в случае уменьшения экрана */
-    flex-wrap: wrap;
-    /* расставляет по внешним краям блока */
-    justify-content: space-between;
-    /* ставим текст по середине по высоте */
-    align-items: center;
-    /* на всякий случай растояние между блоками, ширина, высота */
-    gap: 10px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  background-color: #ffffff;
+
+  gap: 10px 40px;
 }
 
 .logo__link {
-    /* ставим в один ряд */
-    display: flex;
-    /* ставим текст по середине по высоте */
-    align-items: center;
-    /* растояние между элементами */
-    gap: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+
+  gap: 20px;
 }
 
 .logo__title {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
-    letter-spacing: 0.1em;
-    color: #f13C6E;
-    transition: 1s;
+  -webkit-transition: 1s;
+       -o-transition: 1s;
+          transition: 1s;
+  letter-spacing: 0.1em;
+
+  color: #f13c6e;
+
+  font-size: 36px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 42px;
 }
 
 .logo__title:hover {
-    transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .feedback {
-    /* ставим в один ряд */
-    display: flex;
-    /* ставим текст по середине по высоте */
-    align-items: center;
-    /* растояние между элементами */
-    gap: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+
+  gap: 40px;
 }
 
 .feefback__phone {
-    font-size: 16px;
-    line-height: 19px;
-    color: #000000;
+  color: #000000;
+
+  font-size: 16px;
+  line-height: 19px;
 }
-
-/* этот класс уже можно не использовать, копия он же btn--secondary */
-/* .feefback__button { */
-/* color: #000000; */
-/* background: #FFFFFF; */
-/* border: 2px solid #F13C6E; */
-/* остальные настройки в общем классе btn  */
-/* } */
-
 .navbar-primary {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: #FFFFFF;
-    /* только верхний border */
-    border-top: 1px solid #efefef;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  border-top: 1px solid #efefef;
+  background-color: #ffffff;
 }
 
 .navbar-primary__list {
-    /* убираем точки слева, делаем его не лист */
-    list-style-type: none;
-    /* ставим в один ряд */
-    display: flex;
-    /* разрешает перенос, в случае уменьшения экрана */
-    flex-wrap: wrap;
-    /* ставим текст по середине по вертикали */
-    align-items: center;
-    /* ставим текст по середине по горизонтали */
-    justify-content: center;
-    /* расстояние между словами в navbar, ширина, высота*/
-    gap: 5px 40px;
-}
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 
-.navbar-primary__item {}
+  list-style-type: none;
+
+  gap: 5px 40px;
+}
 
 .navbar-primary__link {
-    font-size: 16px;
-    line-height: 19px;
-    color: #000000;
+  color: #000000;
+
+  font-size: 16px;
+  line-height: 19px;
 }
 
-.main {}
-
 .hero {
-    min-height: 604px;
-    /* ширину не задаем, она меняется от размера экрана */
-    background-color: #f13c6e;
-    background-image: url(../img/Background1.png);
-    /* выключаем повторение */
-    background-repeat: no-repeat;
-    /* центрирует, выставляем по центру */
-    background-position: 50% 50%;
-    /* полностью вписывает картинку, если нужно */
-    background-size: cover;
-    /* или так, зависит от картинки */
-    /* background-size: contain; */
+  min-height: 604px;
+  padding-top: 159px;
+  padding-bottom: 192px;
 
-    padding-top: 159px;
-    padding-bottom: 192px;
-    /* цвет можно поставить здесь, будет относится ко всему блоку */
-    color: #FFFFFF;
-
+  color: #ffffff;
+  background-color: #f13c6e;
+  background-image: url(../img/Background1.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
 }
 
 .hero__content {
-    max-width: 310px;
-    /* это способ 2 чтобы задать отступы, не обязательно */
-    /* высоту не задаем, она растягивается от контента */
-    /* задаем свойство flex, чтобы указать отступы через gap */
-    /* display: flex; */
-    /* ставит в столбик */
-    /* flex-direction: column; */
-    /* отступы */
-    /* gap: 40px; */
+  max-width: 310px;
 }
 
 .hero__title {
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 56px;
-    /* цвет стоит в общем блоке hero */
-    /* color: #FFFFFF; */
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
 }
 
 .hero__description {
-    font-size: 14px;
-    line-height: 20px;
-    /* цвет стоит в общем блоке hero */
-    /* color: #FFFFFF; */
-    padding-top: 9px;
-    padding-bottom: 44px;
+  padding-top: 9px;
+  padding-bottom: 44px;
+
+  font-size: 14px;
+  line-height: 20px;
 }
-
-.hero__actions {}
-
-/* общий класс кнопок */
 .btn {
-    /* обязательно меняем из строчного в блочный */
-    display: flex;
-    /* ставим текст по середине по высоте */
-    align-items: center;
-    /* ставим текст по середине по ширине */
-    justify-content: center;
-    /* центрирует по ширине, если не включен display: flex */
-    text-align: center;
-    /* всегда добавляем к ширине или высоте min */
-    /* лучше max-width min-height */
-    max-width: 170px;
-    min-height: 40px;
-    /* внутренние отступы  */
-    padding: 0.25em 1em;
-    /* закругления по углам */
-    border-radius: 40px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    /* расстояние между буквами */
-    letter-spacing: 0.05em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  max-width: 170px;
+  min-height: 40px;
+  padding: 0.25em 1em;
+
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  border-radius: 40px;
+
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 16px;
 }
 
 .activ:hover {
-
-    box-shadow: 0 0 7px #f13c6e;
+  -webkit-box-shadow: 0 0 7px #f13c6e;
+          box-shadow: 0 0 7px #f13c6e;
 }
 
 .activ2:hover {
-
-    box-shadow: 0 0 7px #ffffff;
+  -webkit-box-shadow: 0 0 7px #ffffff;
+          box-shadow: 0 0 7px #ffffff;
 }
 
-
-
 .btn--primary {
-    color: #000000;
-    background: #FFFFFF;
-    border: 2px solid #F13C6E;
-    /* остальные настройки в общем классе btn  */
+  color: #000000;
+  border: 2px solid #f13c6e;
+  background: #ffffff;
 }
 
 .btn--secondary {
-    color: #FFFFFF;
-    background: #F13C6E;
-    border: 2px solid #FFFFFF;
-    /* остальные настройки в общем классе btn  */
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  background: #f13c6e;
 }
-
-/* этот класс уже можно не использовать, копия он же btn--secondary */
-/* /* .hero__button { */
-/* color: #FFFFFF; */
-/* background: #F13C6E; */
-/* border: 2px solid #FFFFFF; */
-/* остальные настройки в общем классе btn  */
-/* } */
-
 .btn--sm {
-    width: 130px;
-    height: 35px;
+  width: 130px;
+  height: 35px;
 
-    background: #F13C6E;
-    border: 1px solid #F13C6E;
-    border-radius: 30px;
+  text-align: center;
+  letter-spacing: 0.05em;
 
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    letter-spacing: 0.05em;
-    color: #FFFFFF;
-    /* остальные настройки в общем классе btn  */
+  color: #ffffff;
+  border: 1px solid #f13c6e;
+  border-radius: 30px;
+  background: #f13c6e;
+
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .offers {
-    padding-top: 80px;
-    padding-bottom: 100px;
+  padding-top: 80px;
+  padding-bottom: 100px;
 }
 
 .offers__title {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    color: #000000;
-    margin-bottom: 39px;
+  margin-bottom: 39px;
+
+  color: #000000;
+
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
 }
 
 .offers__content {
-    /* ставим горизонтально */
-    /* display: flex; */
+  display: grid;
 
-    display: grid;
-    /* ставим горизонтально, делим на 4 части по 1 fr, одинаково */
-    grid-auto-columns: minmax(0, 1fr);
-    grid-auto-flow: column;
-    /* или так, способ 2 */
-    /* grid-template-columns: repeat(4, 1fr); */
-    gap: 30px;
+  gap: 30px;
+  grid-auto-columns: minmax(0, 1fr);
+  grid-auto-flow: column;
 }
 
 .offer-item {
-    background-color: #ffffff;
-    /* задаем одинаковое соотношение размеры всех items */
-    /* чтобы при добавлении текста ничего не смещалось */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+      flex-direction: column;
 
-    /* мы убрали flex */
-    /* flex-grow: 1; */
-    /* обязательно указываем базисный размер, 1/4 */
-    /* gap 20 * 3 / 4 = 15px */
-    /* flex-basis: calc(25% - 22.5px); */
-    /* flex-shrink: 0; */
+  padding: 25px;
 
-    padding: 25px;
-    /* обязательно */
-    display: flex;
-    /* ставим по вертикали */
-    flex-direction: column;
-    /* ставит по центру все блоки, если flex */
-    align-items: center;
-    /* отступы между блоками */
-    gap: 20px;
+  background-color: #ffffff;
+
+  gap: 20px;
 }
 
 .offer-item__title {
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
-    color: #333333;
+  text-align: center;
+
+  color: #333333;
+
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .offer-item__picture {
-    /* ставим картинку выше текста */
-    order: -1;
-    /* выравниваем картинку (строчный элемент) по ширине, центр */
-    text-align: center;
-}
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+  order: -1;
 
-.offer-item__image {}
+  text-align: center;
+}
 
 .offer-item__price {
-    font-weight: 500;
-    font-size: 21px;
-    line-height: 25px;
-    text-align: center;
-    letter-spacing: 0.05em;
-    color: #000000;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #000000;
+
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 25px;
 }
 
-.offer-item__actions {}
-
-.offer-item__button {}
-
-
-
 .submit {
-    /* padding-top: 100px; */
-    padding-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 .container--submit {
-    /* ставит блоки в линию по горизонтали */
-    /* display: flex; */
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* расстояние между блоками */
-    gap: 30px;
+  display: grid;
+
+  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .subscribe {
-    background-color: #f13c6e;
-    min-height: 210px;
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    padding-top: 35px;
-    padding-bottom: 35px;
-    padding-left: 40px;
-    padding-right: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+  min-height: 210px;
+  padding-top: 35px;
+  padding-right: 50px;
+  padding-bottom: 35px;
+  padding-left: 40px;
+
+  background-color: #f13c6e;
+
+  gap: 30px;
 }
 
 .subscribe-content {
-    max-width: 250px;
+  max-width: 250px;
 }
 
 .subscribe-content__title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
-    color: #FFFFFF;
-}
+  color: #ffffff;
 
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+}
 
 .subscribe-content__description {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    color: #FFFFFF;
-    margin-top: 25px;
-    margin-bottom: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
 }
 
-.subscribe-content__mail {}
-
 .subscribe-content__button {
-    /* обязательно меняем из строчного в блочный */
-    display: flex;
-    /* ставим текст по середине по высоте */
-    align-items: center;
-    /* ставим текст по середине по ширине */
-    justify-content: center;
-    /* центрирует по ширине, если не включен display: flex */
-    /* text-align: center; */
-    /* всегда добавляем к ширине или высоте min */
-    /* лучше max-width min-height */
-    width: 225px;
-    height: 35px;
-    /* внутренние отступы  */
-    padding: 0.25em 1em;
-    background: #FFFFFF;
-    border: 2px solid #F13C6E;
-    /* закругления по углам */
-    border-radius: 30px;
-    font-size: 14px;
-    line-height: 16px;
-    /* text-align: center; */
-    color: #C4C4C4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  width: 225px;
+  height: 35px;
+  padding: 0.25em 1em;
+
+  color: #c4c4c4;
+  border: 2px solid #f13c6e;
+  border-radius: 30px;
+  background: #ffffff;
+
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .subscribe-picture {
-    /* обязательно меняем из строчного в блочный */
-    display: flex;
-    /* ставим текст по середине по высоте */
-    align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
 }
-
-.subscribe-picture__image {}
 
 .location {
-    background-color: #f13c6e;
-    min-height: 210px;
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    padding-top: 35px;
-    padding-bottom: 35px;
-    padding-left: 40px;
-    padding-right: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+  min-height: 210px;
+  padding-top: 35px;
+  padding-right: 50px;
+  padding-bottom: 35px;
+  padding-left: 40px;
+
+  background-color: #f13c6e;
+
+  gap: 30px;
 }
 
-
 .location-content {
-    max-width: 250px;
+  max-width: 250px;
 }
 
 .location-content__title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
-    color: #FFFFFF;
+  color: #ffffff;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
 }
 
 .location-content__description {
-    font-size: 14px;
-    line-height: 20px;
-    color: #FFFFFF;
-    margin-top: 25px;
-    margin-bottom: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+  color: #ffffff;
+
+  font-size: 14px;
+  line-height: 20px;
 }
 
-.location-content__link {}
-
 .location-content__button {
-    /* обязательно меняем из строчного в блочный */
-    display: flex;
-    /* ставим текст по середине по высоте */
-    align-items: center;
-    /* ставим текст по середине по ширине */
-    justify-content: center;
-    /* центрирует по ширине, если не включен display: flex */
-    text-align: center;
-    /* всегда добавляем к ширине или высоте min */
-    /* лучше max-width min-height */
-    /* внутренние отступы  */
-    padding: 0.25em 1em;
-    /* закругления по углам */
-    max-width: 170px;
-    min-height: 35px;
-    background: #F13C6E;
-    border: 2px solid #FFFFFF;
-    border-radius: 30px;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  max-width: 170px;
+  min-height: 35px;
+  padding: 0.25em 1em;
+
+  text-align: center;
+  text-align: center;
+
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  background: #f13c6e;
+
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .location-picture {
-    /* обязательно меняем из строчного в блочный */
-    display: flex;
-    /* ставим текст по середине по высоте */
-    align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
 }
-
-.location-picture__image {}
 
 .impuls {
-    margin-bottom: 79px;
+  margin-bottom: 79px;
 }
 
-
 .impuls__box {
-    /* height: 357px; */
-    /* width: 1110px; */
-    /* background-color: yellow; */
-    display: flex;
-    /* gap: 5px; */
-    flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .impuls__box-item {
-    min-height: 119px;
-    width: 25%;
-    background-color: #ffffff;
-    /* display: block; */
-    /* justify-content: center;
-    align-items: center; */
-    /* margin: auto; */
-    border: 1px solid #efefef;
+  width: 25%;
+  min-height: 119px;
 
+  border: 1px solid #efefef;
+  background-color: #ffffff;
 }
 
 .impuls__box-image {
-    /* делаем строчный img элемент блочным */
-    display: block;
-    /* ставим по центру */
-    margin: auto;
-    margin-top: 33px;
+  display: block;
+
+  margin: auto;
+  margin-top: 33px;
 }
 
-
-
-
-
 .looked {
-    margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 .looked__title {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    color: #000000;
-    margin-bottom: 39px;
+  margin-bottom: 39px;
+
+  color: #000000;
+
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
 }
 
 .looked__content {
-    /* ставим горизонтально */
-    /* display: flex; */
+  display: grid;
 
-    display: grid;
-    /* ставим горизонтально, делим на 4 части по 1 fr, одинаково */
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-
-
-
+  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .looked-item {
-    background-color: #ffffff;
-    /* задаем одинаковое соотношение размеры всех items */
-    /* чтобы при добавлении текста ничего не смещалось */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+      flex-direction: column;
 
-    /* мы убрали flex */
-    /* flex-grow: 1; */
-    /* обязательно указываем базисный размер, 1/4 */
-    /* gap 20 * 3 / 4 = 15px */
-    /* flex-basis: calc(25% - 22.5px); */
-    /* flex-shrink: 0; */
+  padding: 25px;
 
-    padding: 25px;
-    /* обязательно */
-    display: flex;
-    /* ставим по вертикали */
-    flex-direction: column;
-    /* ставит по центру все блоки, если flex */
-    align-items: center;
-    /* отступы между блоками */
-    gap: 20px;
+  background-color: #ffffff;
+
+  gap: 20px;
 }
 
 .looked-item__title {
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
-    color: #333333;
+  text-align: center;
+
+  color: #333333;
+
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .looked-item__picture {
-    /* ставим картинку выше текста */
-    order: -1;
-    /* выравниваем картинку (строчный элемент) по ширине, центр */
-    text-align: center;
-}
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+  order: -1;
 
-.looked-item__image {}
+  text-align: center;
+}
 
 .looked-item__price {
-    font-weight: 500;
-    font-size: 21px;
-    line-height: 25px;
-    text-align: center;
-    letter-spacing: 0.05em;
-    color: #000000;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #000000;
+
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 25px;
 }
 
-
-
-.looked-item__actions {}
-
-.looked-item__button {}
-
-
 .popular {
-    min-height: 373px;
-    /* ширину не задаем, она меняется от размера экрана */
-    background-color: #ffffff;
-    padding-top: 60px;
-    padding-bottom: 50px;
-    border-bottom: 1px solid #efefef;
+  min-height: 373px;
+  padding-top: 60px;
+  padding-bottom: 50px;
+
+  border-bottom: 1px solid #efefef;
+  background-color: #ffffff;
 }
 
 .popular-box {
-    display: grid;
-    /* ставим горизонтально, делим на 4 части по 1 fr, одинаково */
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+  display: grid;
 
+  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .popular-box__item {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .popular-box__item-title {
-    width: 99px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 140.62%;
-    color: #000000;
-    padding-bottom: 25px;
+  width: 99px;
+  padding-bottom: 25px;
+
+  color: #000000;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140.62%;
 }
 
 .popular-box__item-description {
-    padding-top: 25px;
-    border-top: 1px solid #efefef;
+  padding-top: 25px;
 
+  color: #828282;
+  border-top: 1px solid #efefef;
 
-
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 28px;
-    color: #828282;
-
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 28px;
 }
 
 .popular-box__item-list {
-    /* убираем точки слева, делаем его не лист */
-    list-style-type: none;
-
+  list-style-type: none;
 }
 
-.footer {}
-
-
-
 .footer-box1 {
-    height: 120px;
-    background-color: #ffffff;
+  height: 120px;
+  padding-top: 35px;
+  padding-bottom: 35px;
 
-    padding-top: 35px;
-    padding-bottom: 35px;
-
+  background-color: #ffffff;
 }
 
 .container--ft1 {
-    display: flex;
-    justify-content: space-between;
-
-    align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
-
 .footer-box1__insta {
-    display: flex;
-    /* ставим по середине по высоте */
-    align-items: center;
-    gap: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
 
+  gap: 20px;
 }
 
 .footer-box1__contacts {
-    display: flex;
-    /* ставим по середине по высоте */
-    align-items: center;
-    gap: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+
+  gap: 40px;
 }
 
 .footer-box1__contacts-phone {
-    font-size: 16px;
-    line-height: 19px;
-    color: #000000;
+  color: #000000;
+
+  font-size: 16px;
+  line-height: 19px;
 }
 
-.footer-box1__contacts-callback {}
-
 .footer-box1__contacts-button {
-    font-size: 14px;
-    line-height: 16px;
-    color: #000000;
-    /* всегда добавляем к ширине или высоте min */
-    /* лучше max-width min-height */
-    max-width: 170px;
-    min-height: 40px;
+  max-width: 170px;
+  min-height: 40px;
 
-    background: #FFFFFF;
+  color: #000000;
+  border: 2px solid #f13c6e;
+  border-radius: 40px;
+  background: #ffffff;
 
-    border: 2px solid #F13C6E;
-    border-radius: 40px;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .footer-box2 {
-    height: 63px;
-    background-color: #efefef;
-    padding-top: 25px;
-    padding-bottom: 25px;
+  height: 63px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  background-color: #efefef;
 }
 
-
 .container--ft2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .footer-box2__name {
-    font-size: 12px;
-    line-height: 14px;
-    color: #828282;
+  color: #828282;
+
+  font-size: 12px;
+  line-height: 14px;
 }
 
 .footer-box2__copyright {
-    font-size: 12px;
-    line-height: 14px;
-    color: #828282;
+  color: #828282;
+
+  font-size: 12px;
+  line-height: 14px;
 }
