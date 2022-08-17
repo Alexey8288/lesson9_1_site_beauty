@@ -336,11 +336,11 @@ a {
 
     display: grid;
     /* ставим горизонтально, делим на 4 части по 1 fr, одинаково */
-    grid-template-columns: repeat(4, 1fr);
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+    /* или так, способ 2 */
+    /* grid-template-columns: repeat(4, 1fr); */
     gap: 30px;
-
-
-
 }
 
 .offer-item {
