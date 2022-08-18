@@ -18,7 +18,7 @@ body {
     /* в body прописывем все что наследуется */
     /* добавляем google fonts */
     font-family: 'Roboto', sans-serif;
-пше     /* font-size: 14px; */
+    /* font-size: 14px; */
     /* ставим font-size в rem (14/16=0.875) */
     font-size: 0.875rem;
     font-style: normal;
@@ -89,7 +89,7 @@ a {
     background-color: #ffffff;
 }
 
-.container--logo {
+.navbar-info__container {
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: #ffffff;
@@ -135,7 +135,7 @@ a {
     /* ставим текст по середине по высоте */
     align-items: center;
     /* растояние между элементами */
-    gap: 40px;
+    gap: 10px 40px;
 }
 
 .feefback__phone {
@@ -769,3 +769,30 @@ a {
     line-height: 14px;
     color: #828282;
 }
+
+@media (max-width: 992px) {
+
+
+}
+
+@media (max-width: 768px) {
+.navbar-info__container {
+    justify-content: center
+}
+
+}
+
+
+@media (max-width: 576px) {
+// можно и включить, по желанию
+// .navbar-secondary__list {
+    // ставит меню (список) один под другим
+//     flex-direction: column;
+// }
+.feedback {
+flex-direction: column;
+
+}
+
+}
+
