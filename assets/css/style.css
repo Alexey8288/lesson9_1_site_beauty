@@ -351,7 +351,8 @@ a {
   display: grid;
 
   gap: 30px;
-  grid-template-columns: repeat(2, 1fr);
+  grid-auto-columns: minmax(0, 1fr);
+  grid-auto-flow: column;
 }
 
 .subscribe {
@@ -551,7 +552,8 @@ a {
   display: grid;
 
   gap: 30px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-auto-columns: minmax(0, 1fr);
+  grid-auto-flow: column;
 }
 
 .looked-item {
@@ -614,7 +616,8 @@ a {
   display: grid;
 
   gap: 30px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-auto-columns: minmax(0, 1fr);
+  grid-auto-flow: column;
 }
 
 .popular-box__item {
