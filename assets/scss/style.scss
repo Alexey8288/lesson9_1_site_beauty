@@ -197,7 +197,7 @@ a {
     /* полностью вписывает картинку, если нужно */
     background-size: cover;
     /* или так, зависит от картинки */
-    /* background-size: contain; */
+    // background-size: contain;
 
     padding-top: 159px;
     padding-bottom: 192px;
@@ -779,6 +779,9 @@ a {
 .navbar-info__container {
     justify-content: center
 }
+.hero {
+        background-position: 68% 50%;
+}
 
 }
 
@@ -791,7 +794,9 @@ a {
 // }
 .feedback {
 flex-direction: column;
-
+}
+.hero {
+        background-position: 62% 50%;
 }
 
 }
