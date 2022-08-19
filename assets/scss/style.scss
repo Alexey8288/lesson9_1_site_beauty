@@ -817,6 +817,14 @@ a {
             // два блока на весь экран
             grid-template-columns: repeat(2, 1fr);
         }
+
+                .popular-box {
+                // отменили, сбросили то что было (initial)
+                    grid-auto-columns: initial;
+                    grid-auto-flow: initial;
+                    // два блока на весь экран
+                    grid-template-columns: repeat(2, 1fr);
+                }
 }
 
 
