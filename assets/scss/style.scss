@@ -545,14 +545,18 @@ a {
     /* height: 357px; */
     /* width: 1110px; */
     /* background-color: yellow; */
-    display: flex;
+    // способ 1
+    // display: flex;
     /* gap: 5px; */
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
+    // способ 2
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .impuls__box-item {
     min-height: 119px;
-    width: 25%;
+    // width: 25%;
     background-color: #ffffff;
     /* display: block; */
     /* justify-content: center;
@@ -802,10 +806,22 @@ a {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .impuls__box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+        .looked__content {
+        // отменили, сбросили то что было (initial)
+            grid-auto-columns: initial;
+            grid-auto-flow: initial;
+            // два блока на весь экран
+            grid-template-columns: repeat(2, 1fr);
+        }
 }
 
 
 @media (max-width: 576px) {
+
     // можно и включить, по желанию
     // .navbar-secondary__list {
     // ставит меню (список) один под другим
@@ -849,5 +865,14 @@ a {
         flex-direction: column;
         align-items: center;
     }
+
+         .looked__content {
+            grid-auto-columns: initial;
+                grid-auto-flow: initial;
+                // один блок на весь экран
+                grid-template-columns: 1fr;
+                // так нельзя писать 1rf
+                // grid-template-columns: repeat(1, 1fr);
+         }
 
 }
