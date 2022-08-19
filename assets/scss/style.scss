@@ -325,10 +325,11 @@ a {
 
     display: grid;
     /* ставим горизонтально, делим на 4 части по 1 fr, одинаково */
+    // лучше ТАК
     grid-auto-columns: minmax(0, 1fr);
     grid-auto-flow: column;
     /* или так, способ 2 */
-    /* grid-template-columns: repeat(4, 1fr); */
+    // grid-template-columns: repeat(4, 1fr);
     gap: 30px;
 }
 
@@ -588,7 +589,7 @@ a {
     /* ставим горизонтально, делим на 4 части по 1 fr, одинаково */
     // grid-template-columns: repeat(4, 1fr);
     // способ 2
-      display: grid;
+    display: grid;
     /* ставим горизонтально, делим на 4 части по 1 fr, одинаково */
     grid-auto-columns: minmax(0, 1fr);
     grid-auto-flow: column;
@@ -770,34 +771,48 @@ a {
     color: #828282;
 }
 
-@media (max-width: 992px) {
-
-
-}
+@media (max-width: 992px) {}
 
 @media (max-width: 768px) {
-.navbar-info__container {
-    justify-content: center
-}
-.hero {
+    .navbar-info__container {
+        justify-content: center
+    }
+
+    .hero {
         background-position: 68% 50%;
-}
+    }
+
+    .offers__content {
+        // отменили, сбросили то что было (initial)
+        grid-auto-columns: initial;
+        grid-auto-flow: initial;
+        // два блока на весь экран
+        grid-template-columns: repeat(2, 1fr);
+    }
 
 }
 
 
 @media (max-width: 576px) {
-// можно и включить, по желанию
-// .navbar-secondary__list {
+
+    // можно и включить, по желанию
+    // .navbar-secondary__list {
     // ставит меню (список) один под другим
-//     flex-direction: column;
-// }
-.feedback {
-flex-direction: column;
-}
-.hero {
+    // flex-direction: column;
+    // }
+    .feedback {
+        flex-direction: column;
+    }
+
+    .hero {
         background-position: 62% 50%;
-}
+    }
+
+    .offers__content {
+        grid-auto-columns: initial;
+        grid-auto-flow: initial;
+        // один блок на весь экран
+        grid-template-columns: 1fr;
+    }
 
 }
-
