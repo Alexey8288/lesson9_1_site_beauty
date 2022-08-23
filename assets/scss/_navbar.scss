@@ -1,0 +1,133 @@
+.navbar-secondary {
+    background: #efefef;
+    /* укажем мин высоту */
+    min-height: 50px;
+    /* ставим в один ряд все блоки*/
+    display: flex;
+    /* ставим текст по середине по ширине */
+    align-items: center;
+    /* для мобильных версий, чтобы был отступ */
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.navbar-secondary__list {
+    /* убираем точки слева, делаем его не лист */
+    list-style-type: none;
+    /* ставим в один ряд весь список */
+    display: flex;
+    /* разрешает перенос, в случае уменьшения экрана */
+    flex-wrap: wrap;
+    /* расстояние между словами в navbar, ширина, высота*/
+    gap: 5px 30px;
+    /* ставим текст по середине по высоте */
+    align-items: center;
+    /* ставим текст по середине по ширине */
+    justify-content: center;
+}
+
+.navbar-secondary__item {}
+
+.navbar-secondary__link {
+    font-size: 14px;
+    line-height: 16px;
+    color: #333333;
+}
+
+.navbar-info {
+    background-color: #ffffff;
+}
+
+.navbar-info__container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #ffffff;
+    /* чтобы все элементы были в один ряд по горизонтали */
+    /* ставит в ряд картинку и текст */
+    display: flex;
+    /* разрешает перенос, в случае уменьшения экрана */
+    flex-wrap: wrap;
+    /* расставляет по внешним краям блока */
+    justify-content: space-between;
+    /* ставим текст по середине по высоте */
+    align-items: center;
+    /* на всякий случай растояние между блоками, ширина, высота */
+    gap: 10px 40px;
+}
+
+.logo__link {
+    /* ставим в один ряд */
+    display: flex;
+    /* ставим текст по середине по высоте */
+    align-items: center;
+    /* растояние между элементами */
+    gap: 20px;
+}
+
+.logo__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.1em;
+    color: #f13C6E;
+    transition: 1s;
+}
+
+.logo__title:hover {
+    transform: scale(1.1);
+}
+
+.feedback {
+    /* ставим в один ряд */
+    display: flex;
+    /* ставим текст по середине по высоте */
+    align-items: center;
+    /* растояние между элементами */
+    gap: 10px 40px;
+}
+
+.feefback__phone {
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+/* этот класс уже можно не использовать, копия он же btn--secondary */
+/* .feefback__button { */
+/* color: #000000; */
+/* background: #FFFFFF; */
+/* border: 2px solid #F13C6E; */
+/* остальные настройки в общем классе btn  */
+/* } */
+
+.navbar-primary {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #FFFFFF;
+    /* только верхний border */
+    border-top: 1px solid #efefef;
+}
+
+.navbar-primary__list {
+    /* убираем точки слева, делаем его не лист */
+    list-style-type: none;
+    /* ставим в один ряд */
+    display: flex;
+    /* разрешает перенос, в случае уменьшения экрана */
+    flex-wrap: wrap;
+    /* ставим текст по середине по вертикали */
+    align-items: center;
+    /* ставим текст по середине по горизонтали */
+    justify-content: center;
+    /* расстояние между словами в navbar, ширина, высота*/
+    gap: 5px 40px;
+}
+
+.navbar-primary__item {}
+
+.navbar-primary__link {
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
