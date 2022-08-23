@@ -18,31 +18,32 @@
     grid-auto-columns: minmax(0, 1fr);
     grid-auto-flow: column;
     gap: 30px;
-}
 
-.popular-box__item {
-    background-color: #ffffff;
-}
+    &__item {
+        background-color: #ffffff;
 
-.popular-box__item-title {
-    width: 99px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 140.62%;
-    color: #000000;
-    padding-bottom: 25px;
-}
+        &-title {
+            width: 99px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140.62%;
+            color: #000000;
+            padding-bottom: 25px;
+        }
 
-.popular-box__item-description {
-    padding-top: 25px;
-    border-top: 1px solid #efefef;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 28px;
-    color: #828282;
-}
+        &-description {
+            padding-top: 25px;
+            border-top: 1px solid #efefef;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 28px;
+            color: #828282;
 
-.popular-box__item-list {
-    /* убираем точки слева, делаем его не лист */
-    list-style-type: none;
+            &-list {
+                /* убираем точки слева, делаем его не лист */
+                list-style-type: none;
+            }
+        }
+
+    }
 }
