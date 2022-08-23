@@ -1,0 +1,74 @@
+.footer {}
+
+.footer-box1 {
+    min-height: 120px;
+    background-color: #ffffff;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.container--ft1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-box1__insta {
+    display: flex;
+    /* ставим по середине по высоте */
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-box1__contacts {
+    display: flex;
+    /* ставим по середине по высоте */
+    align-items: center;
+    gap: 40px;
+}
+
+.footer-box1__contacts-phone {
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.footer-box1__contacts-callback {}
+
+.footer-box1__contacts-button {
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    /* всегда добавляем к ширине или высоте min */
+    /* лучше max-width min-height */
+    max-width: 170px;
+    min-height: 40px;
+    background: #FFFFFF;
+    border: 2px solid #F13C6E;
+    border-radius: 40px;
+}
+
+.footer-box2 {
+    height: 63px;
+    background-color: #efefef;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.container--ft2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-box2__name {
+    font-size: 12px;
+    line-height: 14px;
+    color: #828282;
+}
+
+.footer-box2__copyright {
+    font-size: 12px;
+    line-height: 14px;
+    color: #828282;
+}

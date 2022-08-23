@@ -1,0 +1,76 @@
+.looked {
+    margin-bottom: 80px;
+}
+
+.looked__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    margin-bottom: 39px;
+}
+
+.looked__content {
+    /* ставим горизонтально */
+    /* display: flex; */
+    // способ 1
+    // display: grid;
+    /* ставим горизонтально, делим на 4 части по 1 fr, одинаково */
+    // grid-template-columns: repeat(4, 1fr);
+    // способ 2
+    display: grid;
+    /* ставим горизонтально, делим на 4 части по 1 fr, одинаково */
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+    gap: 30px;
+}
+
+.looked-item {
+    background-color: #ffffff;
+    /* задаем одинаковое соотношение размеры всех items */
+    /* чтобы при добавлении текста ничего не смещалось */
+    /* мы убрали flex */
+    /* flex-grow: 1; */
+    /* обязательно указываем базисный размер, 1/4 */
+    /* gap 20 * 3 / 4 = 15px */
+    /* flex-basis: calc(25% - 22.5px); */
+    /* flex-shrink: 0; */
+    padding: 25px;
+    /* обязательно */
+    display: flex;
+    /* ставим по вертикали */
+    flex-direction: column;
+    /* ставит по центру все блоки, если flex */
+    align-items: center;
+    /* отступы между блоками */
+    gap: 20px;
+}
+
+.looked-item__title {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #333333;
+}
+
+.looked-item__picture {
+    /* ставим картинку выше текста */
+    order: -1;
+    /* выравниваем картинку (строчный элемент) по ширине, центр */
+    text-align: center;
+}
+
+.looked-item__image {}
+
+.looked-item__price {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+
+.looked-item__actions {}
+
+.looked-item__button {}
