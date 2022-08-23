@@ -22,6 +22,34 @@
     line-height: 16px;
     /* расстояние между буквами */
     letter-spacing: 0.05em;
+
+    &--primary {
+        color: #000000;
+        background: #FFFFFF;
+        border: 2px solid #F13C6E;
+        /* остальные настройки в общем классе btn  */
+    }
+
+    &--secondary {
+        color: #FFFFFF;
+        background: #F13C6E;
+        border: 2px solid #FFFFFF;
+        /* остальные настройки в общем классе btn  */
+    }
+
+    &--sm {
+        width: 130px;
+        height: 35px;
+        background: #F13C6E;
+        border: 1px solid #F13C6E;
+        border-radius: 30px;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+        /* остальные настройки в общем классе btn  */
+    }
 }
 
 .activ:hover {
@@ -30,40 +58,4 @@
 
 .activ2:hover {
     box-shadow: 0 0 7px #ffffff;
-}
-
-.btn--primary {
-    color: #000000;
-    background: #FFFFFF;
-    border: 2px solid #F13C6E;
-    /* остальные настройки в общем классе btn  */
-}
-
-.btn--secondary {
-    color: #FFFFFF;
-    background: #F13C6E;
-    border: 2px solid #FFFFFF;
-    /* остальные настройки в общем классе btn  */
-}
-
-/* этот класс уже можно не использовать, копия он же btn--secondary */
-/* /* .hero__button { */
-/* color: #FFFFFF; */
-/* background: #F13C6E; */
-/* border: 2px solid #FFFFFF; */
-/* остальные настройки в общем классе btn  */
-/* } */
-
-.btn--sm {
-    width: 130px;
-    height: 35px;
-    background: #F13C6E;
-    border: 1px solid #F13C6E;
-    border-radius: 30px;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    letter-spacing: 0.05em;
-    color: #FFFFFF;
-    /* остальные настройки в общем классе btn  */
 }

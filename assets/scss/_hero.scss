@@ -16,33 +16,33 @@
     padding-bottom: 192px;
     /* цвет можно поставить здесь, будет относится ко всему блоку */
     color: #FFFFFF;
-}
 
-.hero__content {
-    max-width: 310px;
-    /* это способ 2 чтобы задать отступы, не обязательно */
-    /* высоту не задаем, она растягивается от контента */
-    /* задаем свойство flex, чтобы указать отступы через gap */
-    /* display: flex; */
-    /* ставит в столбик */
-    /* flex-direction: column; */
-    /* отступы */
-    /* gap: 40px; */
-}
+    &__content {
+        max-width: 310px;
+        /* это способ 2 чтобы задать отступы, не обязательно */
+        /* высоту не задаем, она растягивается от контента */
+        /* задаем свойство flex, чтобы указать отступы через gap */
+        /* display: flex; */
+        /* ставит в столбик */
+        /* flex-direction: column; */
+        /* отступы */
+        /* gap: 40px; */
 
-.hero__title {
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 56px;
-    /* цвет стоит в общем блоке hero */
-    /* color: #FFFFFF; */
-}
+        &-title {
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 56px;
+            /* цвет стоит в общем блоке hero */
+            /* color: #FFFFFF; */
+        }
 
-.hero__description {
-    font-size: 14px;
-    line-height: 20px;
-    /* цвет стоит в общем блоке hero */
-    /* color: #FFFFFF; */
-    padding-top: 9px;
-    padding-bottom: 44px;
+        &-description {
+            font-size: 14px;
+            line-height: 20px;
+            /* цвет стоит в общем блоке hero */
+            /* color: #FFFFFF; */
+            padding-top: 9px;
+            padding-bottom: 44px;
+        }
+    }
 }

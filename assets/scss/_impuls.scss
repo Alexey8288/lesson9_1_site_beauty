@@ -1,35 +1,38 @@
 .impuls {
     margin-bottom: 79px;
-}
 
-.impuls__box {
-    /* height: 357px; */
-    /* width: 1110px; */
-    /* background-color: yellow; */
-    // способ 1
-    // display: flex;
-    /* gap: 5px; */
-    // flex-wrap: wrap;
-    // способ 2
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
+    &__box {
+        /* height: 357px; */
+        /* width: 1110px; */
+        /* background-color: yellow; */
+        // способ 1
+        // display: flex;
+        /* gap: 5px; */
+        // flex-wrap: wrap;
+        // способ 2
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
 
-.impuls__box-item {
-    min-height: 119px;
-    // width: 25%;
-    background-color: #ffffff;
-    /* display: block; */
-    /* justify-content: center;
-    align-items: center; */
-    /* margin: auto; */
-    border: 1px solid #efefef;
-}
+        &-item {
+            min-height: 119px;
+            // width: 25%;
+            background-color: #ffffff;
+            /* display: block; */
+            /* justify-content: center;
+            align-items: center; */
+            /* margin: auto; */
+            border: 1px solid #efefef;
 
-.impuls__box-image {
-    /* делаем строчный img элемент блочным */
-    display: block;
-    /* ставим по центру */
-    margin: auto;
-    margin-top: 33px;
+            &-image {
+                /* делаем строчный img элемент блочным */
+                display: block;
+                /* ставим по центру */
+                margin: auto;
+                margin-top: 33px;
+            }
+
+        }
+
+    }
+
 }
