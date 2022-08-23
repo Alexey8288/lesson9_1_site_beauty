@@ -18,7 +18,7 @@
         background-position: 68% 50%;
     }
 
-    .offers__content {
+    .offer__content {
         // отменили, сбросили то что было (initial)
         grid-auto-columns: initial;
         grid-auto-flow: initial;
@@ -81,7 +81,7 @@
         background-position: 62% 50%;
     }
 
-    .offers__content {
+        .offer__content {
         grid-auto-columns: initial;
         grid-auto-flow: initial;
         // один блок на весь экран

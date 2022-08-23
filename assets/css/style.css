@@ -881,7 +881,7 @@ a {
   .hero {
     background-position: 68% 50%;
   }
-  .offers__content {
+  .offer__content {
     grid-auto-columns: initial;
     grid-auto-flow: initial;
     grid-template-columns: repeat(2, 1fr);
@@ -934,7 +934,7 @@ a {
   .hero {
     background-position: 62% 50%;
   }
-  .offers__content {
+  .offer__content {
     grid-auto-columns: initial;
     grid-auto-flow: initial;
     grid-template-columns: 1fr;
