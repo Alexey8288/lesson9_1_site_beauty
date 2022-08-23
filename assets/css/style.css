@@ -33,14 +33,6 @@ a {
   margin: 0 auto;
   padding: 0 20px;
 }
-
-.container--submit {
-  display: grid;
-
-  gap: 30px;
-  grid-auto-columns: minmax(0, 1fr);
-  grid-auto-flow: column;
-}
 .btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -353,6 +345,14 @@ a {
 
 .submit {
   padding-bottom: 100px;
+}
+
+.container--submit {
+  display: grid;
+
+  gap: 30px;
+  grid-auto-columns: minmax(0, 1fr);
+  grid-auto-flow: column;
 }
 
 .subscribe {
