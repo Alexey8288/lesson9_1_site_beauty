@@ -1,10 +1,10 @@
 .popular {
     min-height: 373px;
     /* ширину не задаем, она меняется от размера экрана */
-    background-color: #ffffff;
+    background-color: $color-white;
     padding-top: 60px;
     padding-bottom: 50px;
-    border-bottom: 1px solid #efefef;
+    border-bottom: 1px solid $color-light;
 }
 
 .popular-box {
@@ -20,20 +20,20 @@
     gap: 30px;
 
     &__item {
-        background-color: #ffffff;
+        background-color: $color-white;
 
         &-title {
             width: 99px;
             font-weight: 500;
             font-size: 16px;
             line-height: 140.62%;
-            color: #000000;
+            color: $color-primary-black;
             padding-bottom: 25px;
         }
 
         &-description {
             padding-top: 25px;
-            border-top: 1px solid #efefef;
+            border-top: 1px solid $color-light;
             font-weight: 400;
             font-size: 12px;
             line-height: 28px;

@@ -18,7 +18,7 @@ html {
 body {
     /* в body прописывем все что наследуется */
     /* добавляем google fonts */
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-family;
     /* font-size: 14px; */
     /* ставим font-size в rem (14/16=0.875) */
     font-size: 0.875rem;
@@ -26,22 +26,22 @@ body {
     /* ставим по умолчании жирность текста */
     font-weight: 400;
     /* цвет текста */
-    color: #333333;
+    color: $color-gray;
     /* фон страницы */
-    background: #efefef;
+    background: $color-light;
 }
 
 a {
     /* убираем подчеркивание на ссылках */
     text-decoration: none;
-    /* цвет наследовать из body #333333*/
+    /* цвет наследовать из body $color-gray*/
     color: inherit;
 }
 
 .container {
     /* высоту не задаем, она растягивается от контента */
     /* обязательно учитывать padding (1110+20+20) */
-    max-width: 1150px;
+    max-width: $max-width;
     /* обязательно всегда ставим */
     padding: 0 20px;
     /* ставит по центру (по ширине) */

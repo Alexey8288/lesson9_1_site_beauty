@@ -1,7 +1,7 @@
 .hero {
     min-height: 604px;
     /* ширину не задаем, она меняется от размера экрана */
-    background-color: #f13c6e;
+    background-color: $color-accent-red;
     background-image: url(../img/Background1.png);
     /* выключаем повторение */
     background-repeat: no-repeat;
@@ -15,7 +15,7 @@
     padding-top: 159px;
     padding-bottom: 192px;
     /* цвет можно поставить здесь, будет относится ко всему блоку */
-    color: #FFFFFF;
+    color: $color-white;
 
     &__content {
         max-width: 310px;
@@ -33,14 +33,14 @@
             font-size: 48px;
             line-height: 56px;
             /* цвет стоит в общем блоке hero */
-            /* color: #FFFFFF; */
+            /* color: $color-white; */
         }
 
         &-description {
             font-size: 14px;
             line-height: 20px;
             /* цвет стоит в общем блоке hero */
-            /* color: #FFFFFF; */
+            /* color: $color-white; */
             padding-top: 9px;
             padding-bottom: 44px;
         }

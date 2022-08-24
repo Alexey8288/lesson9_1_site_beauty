@@ -24,38 +24,38 @@
     letter-spacing: 0.05em;
 
     &--primary {
-        color: #000000;
-        background: #FFFFFF;
-        border: 2px solid #F13C6E;
+        color: $color-primary-black;
+        background: $color-white;
+        border: 2px solid $color-accent-red;
         /* остальные настройки в общем классе btn  */
     }
 
     &--secondary {
-        color: #FFFFFF;
-        background: #F13C6E;
-        border: 2px solid #FFFFFF;
+        color: $color-white;
+        background: $color-accent-red;
+        border: 2px solid $color-white;
         /* остальные настройки в общем классе btn  */
     }
 
     &--sm {
         width: 130px;
         height: 35px;
-        background: #F13C6E;
-        border: 1px solid #F13C6E;
+        background: $color-accent-red;
+        border: 1px solid $color-accent-red;
         border-radius: 30px;
         font-size: 14px;
         line-height: 16px;
         text-align: center;
         letter-spacing: 0.05em;
-        color: #FFFFFF;
+        color: $color-white;
         /* остальные настройки в общем классе btn  */
     }
 }
 
 .activ:hover {
-    box-shadow: 0 0 7px #f13c6e;
+    box-shadow: 0 0 7px $color-accent-red;
 }
 
 .activ2:hover {
-    box-shadow: 0 0 7px #ffffff;
+    box-shadow: 0 0 7px $color-white;
 }

@@ -2,7 +2,7 @@
 
 .footer-box1 {
     min-height: 120px;
-    background-color: #ffffff;
+    background-color: $color-white;
     padding-top: 35px;
     padding-bottom: 35px;
 
@@ -22,19 +22,19 @@
         &-phone {
             font-size: 16px;
             line-height: 19px;
-            color: #000000;
+            color: $color-primary-black;
         }
 
         &-button {
             font-size: 14px;
             line-height: 16px;
-            color: #000000;
+            color: $color-primary-black;
             /* всегда добавляем к ширине или высоте min */
             /* лучше max-width min-height */
             max-width: 170px;
             min-height: 40px;
-            background: #FFFFFF;
-            border: 2px solid #F13C6E;
+            background: $color-white;
+            border: 2px solid $color-accent-red;
             border-radius: 40px;
         }
     }
@@ -48,7 +48,7 @@
 
 .footer-box2 {
     height: 63px;
-    background-color: #efefef;
+    background-color: $color-light;
     padding-top: 25px;
     padding-bottom: 25px;
 

@@ -16,12 +16,12 @@
         &-item {
             min-height: 119px;
             // width: 25%;
-            background-color: #ffffff;
+            background-color: $color-white;
             /* display: block; */
             /* justify-content: center;
             align-items: center; */
             /* margin: auto; */
-            border: 1px solid #efefef;
+            border: 1px solid $color-light;
 
             &-image {
                 /* делаем строчный img элемент блочным */
