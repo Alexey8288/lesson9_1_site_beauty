@@ -1,3 +1,4 @@
+// large - lg
 @media (max-width: 992px) {
     .container--submit {
         // отменили, сбросили то что было (initial)
@@ -9,6 +10,7 @@
 
 }
 
+// medium - md
 @media (max-width: 768px) {
     .navbar-info__container {
         justify-content: center
@@ -66,8 +68,8 @@
     }
 }
 
+// small - sm
 @media (max-width: 576px) {
-
     // можно и включить, по желанию
     // .navbar-secondary__list {
     // ставит меню (список) один под другим
