@@ -1,6 +1,7 @@
 @use "../libs/normalize";
 
 @use "presets";
+@use "mixins";
 
 @use "common";
 @use "button";
@@ -12,7 +13,8 @@
 @use "looked";
 @use "popular";
 @use "footer";
-@use "media";
+
+// @use "media";
 
 
 
