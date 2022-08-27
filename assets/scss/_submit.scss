@@ -43,6 +43,17 @@
     padding-left: 40px;
     padding-right: 50px;
 
+    @media (max-width: $sm) {
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     &-content {
         max-width: 250px;
 
@@ -110,6 +121,17 @@
     padding-bottom: 35px;
     padding-left: 40px;
     padding-right: 50px;
+
+    @media (max-width: $sm) {
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     &-content {
         max-width: 250px;

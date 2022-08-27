@@ -33,6 +33,15 @@
             grid-template-columns: repeat(2, 1fr);
         }
 
+        @media (max-width: $sm) {
+            grid-auto-columns: initial;
+            grid-auto-flow: initial;
+            // один блок на весь экран
+            grid-template-columns: 1fr;
+            // так нельзя писать 1rf
+            // grid-template-columns: repeat(1, 1fr);
+        }
+
         &-item {
             background-color: $color-white;
             /* задаем одинаковое соотношение размеры всех items */

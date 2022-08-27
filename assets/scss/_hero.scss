@@ -23,6 +23,10 @@
         background-position: 68% 50%;
     }
 
+    @media (max-width: $sm) {
+        background-position: 62% 50%;
+    }
+
     &__content {
         max-width: 310px;
         /* это способ 2 чтобы задать отступы, не обязательно */

@@ -982,7 +982,7 @@ a {
     grid-auto-flow: initial;
     grid-template-columns: 1fr;
   }
-  .footer-box1__contacts {
+  .footer-box1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -992,5 +992,13 @@ a {
         flex-direction: column;
 
     gap: 15px;
+  }
+  .footer-box1__contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+
+    gap: 20px;
   }
 }
