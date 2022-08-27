@@ -19,18 +19,22 @@
     // расстояние между блоками
     gap: 30px;
 
-
-    // large - lg 992px
-    @media (max-width: $lg) {
-
+    @include lg {
         // отменили, сбросили то что было (initial)
         grid-auto-columns: initial;
         grid-auto-flow: initial;
         // grid-auto-flow: column;
         grid-template-columns: 1fr;
-
-
     }
+
+    // large - lg 992px
+    // @media (max-width: $lg) {
+    //     // отменили, сбросили то что было (initial)
+    //     grid-auto-columns: initial;
+    //     grid-auto-flow: initial;
+    //     // grid-auto-flow: column;
+    //     grid-template-columns: 1fr;
+    // }
 }
 
 .subscribe {
@@ -44,7 +48,7 @@
     padding-left: 40px;
     padding-right: 50px;
 
-    @media (max-width: $sm) {
+    @include sm {
         padding-top: 10px;
         padding-right: 10px;
         padding-bottom: 10px;
@@ -54,6 +58,17 @@
         flex-direction: column;
         align-items: center;
     }
+
+    // @media (max-width: $sm) {
+    //     padding-top: 10px;
+    //     padding-right: 10px;
+    //     padding-bottom: 10px;
+    //     padding-left: 10px;
+    //     gap: 10px;
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    // }
 
     &-content {
         max-width: 250px;
@@ -123,7 +138,7 @@
     padding-left: 40px;
     padding-right: 50px;
 
-    @media (max-width: $sm) {
+    @include sm {
         padding-top: 10px;
         padding-right: 10px;
         padding-bottom: 10px;
@@ -133,6 +148,17 @@
         flex-direction: column;
         align-items: center;
     }
+
+    // @media (max-width: $sm) {
+    //     padding-top: 10px;
+    //     padding-right: 10px;
+    //     padding-bottom: 10px;
+    //     padding-left: 10px;
+    //     gap: 10px;
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    // }
 
     &-content {
         max-width: 250px;

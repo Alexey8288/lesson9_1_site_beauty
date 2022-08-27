@@ -410,7 +410,6 @@ a {
   background-color: #f13c6e;
   background-image: url(../img/Background1.png);
   background-repeat: no-repeat;
-  background-position: 50% 50%;
   background-size: cover;
 }
 .hero__content {
@@ -776,8 +775,6 @@ a {
 
 .footer-box1 {
   min-height: 120px;
-  padding-top: 35px;
-  padding-bottom: 35px;
 
   background-color: #ffffff;
 }
@@ -864,7 +861,17 @@ a {
   justify-content: space-between;
 }
 
-@media (max-width: 992px) {
+@media (min-width: 768px) {
+  .hero {
+    background-position: 50% 50%;
+  }
+  .footer-box1 {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}
+
+@media (max-width: 991.8px) {
   .container--submit {
     grid-auto-columns: initial;
     grid-auto-flow: initial;
@@ -872,14 +879,11 @@ a {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.8px) {
   .navbar-info__container {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-  }
-  .hero {
-    background-position: 68% 50%;
   }
   .offer__content {
     grid-auto-columns: initial;
@@ -898,10 +902,6 @@ a {
     grid-auto-columns: initial;
     grid-auto-flow: initial;
     grid-template-columns: repeat(2, 1fr);
-  }
-  .footer-box1 {
-    padding-top: 20px;
-    padding-bottom: 20px;
   }
   .container--ft1 {
     -webkit-box-orient: vertical;
@@ -924,7 +924,17 @@ a {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 767.8px) and (min-width: 576px) {
+  .hero {
+    background-position: 68% 50%;
+  }
+  .footer-box1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 575.8px) {
   .feedback {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

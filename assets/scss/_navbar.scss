@@ -59,9 +59,13 @@
         /* на всякий случай растояние между блоками, ширина, высота */
         gap: 10px 40px;
 
-        @media (max-width: $mn) {
+        @include md {
             justify-content: center
         }
+
+        // @media (max-width: $md) {
+        //     justify-content: center
+        // }
 
     }
 }
@@ -101,9 +105,13 @@
     /* растояние между элементами */
     gap: 10px 40px;
 
-    @media (max-width: $sm) {
+    @include sm {
         flex-direction: column;
     }
+
+    // @media (max-width: $sm) {
+    //     flex-direction: column;
+    // }
 
     &__phone {
         font-size: 16px;

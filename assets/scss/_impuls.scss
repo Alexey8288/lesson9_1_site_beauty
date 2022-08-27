@@ -16,9 +16,12 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
 
-        @media (max-width: $mn) {
+        @include md {
             grid-template-columns: repeat(2, 1fr);
         }
+        // @media (max-width: $md) {
+        //     grid-template-columns: repeat(2, 1fr);
+        // }
 
         &-item {
             min-height: 119px;

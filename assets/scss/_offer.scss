@@ -26,7 +26,7 @@
         // grid-template-columns: repeat(4, 1fr);
         gap: 30px;
 
-        @media (max-width: $mn) {
+        @include md {
             // отменили, сбросили то что было (initial)
             grid-auto-columns: initial;
             grid-auto-flow: initial;
@@ -34,7 +34,15 @@
             grid-template-columns: repeat(2, 1fr);
         }
 
-        @media (max-width: $sm) {
+        // @media (max-width: $md) {
+        //     // отменили, сбросили то что было (initial)
+        //     grid-auto-columns: initial;
+        //     grid-auto-flow: initial;
+        //     // два блока на весь экран
+        //     grid-template-columns: repeat(2, 1fr);
+        // }
+
+        @include sm {
             grid-auto-columns: initial;
             grid-auto-flow: initial;
             // один блок на весь экран
@@ -42,6 +50,15 @@
             // так нельзя писать 1rf
             // grid-template-columns: repeat(1, 1fr);
         }
+
+        // @media (max-width: $sm) {
+        //     grid-auto-columns: initial;
+        //     grid-auto-flow: initial;
+        //     // один блок на весь экран
+        //     grid-template-columns: 1fr;
+        //     // так нельзя писать 1rf
+        //     // grid-template-columns: repeat(1, 1fr);
+        // }
 
         &-item {
             background-color: $color-white;

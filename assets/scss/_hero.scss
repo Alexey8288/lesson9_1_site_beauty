@@ -8,8 +8,7 @@
     background-image: url(../img/Background1.png);
     /* выключаем повторение */
     background-repeat: no-repeat;
-    /* центрирует, выставляем по центру */
-    background-position: 50% 50%;
+
     /* полностью вписывает картинку, если нужно */
     background-size: cover;
     /* или так, зависит от картинки */
@@ -20,13 +19,28 @@
     /* цвет можно поставить здесь, будет относится ко всему блоку */
     color: $color-white;
 
-    @media (max-width: $mn) {
+    @include md-min {
+        background-position: 50% 50%;
+    }
+
+    // @media (min-width: $md) {
+    //     /* центрирует, выставляем по центру */
+    //     background-position: 50% 50%;
+    // }
+    @include md-sm {
         background-position: 68% 50%;
     }
 
-    @media (max-width: $sm) {
+    // @media (max-width: $md - 0.2px) and (min-width: $sm) {
+    //     background-position: 68% 50%;
+    // }
+    @include sm {
         background-position: 62% 50%;
     }
+
+    // @media (max-width: $sm - 0.2px) {
+    //     background-position: 62% 50%;
+    // }
 
     &__content {
         max-width: 310px;
