@@ -1,5 +1,5 @@
-// large - lg
-@media (max-width: 992px) {
+// large - lg 992px
+@media (max-width: $lg) {
     .container--submit {
         // отменили, сбросили то что было (initial)
         grid-auto-columns: initial;
@@ -10,8 +10,8 @@
 
 }
 
-// medium - md
-@media (max-width: 768px) {
+// medium - md 768px
+@media (max-width: $mn) {
     .navbar-info__container {
         justify-content: center
     }
@@ -68,8 +68,8 @@
     }
 }
 
-// small - sm
-@media (max-width: 576px) {
+// small - sm 576px
+@media (max-width: $sm) {
     // можно и включить, по желанию
     // .navbar-secondary__list {
     // ставит меню (список) один под другим
