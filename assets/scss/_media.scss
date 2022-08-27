@@ -1,71 +1,73 @@
-// large - lg 992px
-@media (max-width: $lg) {
-    .container--submit {
-        // отменили, сбросили то что было (initial)
-        grid-auto-columns: initial;
-        grid-auto-flow: initial;
-        // grid-auto-flow: column;
-        grid-template-columns: 1fr;
-    }
+@use "presets" as *;
 
-}
+// large - lg 992px
+// @media (max-width: $lg) {
+//     .container--submit {
+//         отменили, сбросили то что было (initial)
+//         grid-auto-columns: initial;
+//         grid-auto-flow: initial;
+//         grid-auto-flow: column;
+//         grid-template-columns: 1fr;
+//     }
+
+// }
 
 // medium - md 768px
 @media (max-width: $mn) {
-    .navbar-info__container {
-        justify-content: center
-    }
+    // .navbar-info__container {
+    //     justify-content: center
+    // }
 
-    .hero {
-        background-position: 68% 50%;
-    }
+    // .hero {
+    //     background-position: 68% 50%;
+    // }
 
-    .offer__content {
-        // отменили, сбросили то что было (initial)
-        grid-auto-columns: initial;
-        grid-auto-flow: initial;
-        // два блока на весь экран
-        grid-template-columns: repeat(2, 1fr);
-    }
+    // .offer__content {
+    //     // отменили, сбросили то что было (initial)
+    //     grid-auto-columns: initial;
+    //     grid-auto-flow: initial;
+    //     // два блока на весь экран
+    //     grid-template-columns: repeat(2, 1fr);
+    // }
 
-    .impuls__box {
-        grid-template-columns: repeat(2, 1fr);
-    }
+    // .impuls__box {
+    //     grid-template-columns: repeat(2, 1fr);
+    // }
 
-    .looked__content {
-        // отменили, сбросили то что было (initial)
-        grid-auto-columns: initial;
-        grid-auto-flow: initial;
-        // два блока на весь экран
-        grid-template-columns: repeat(2, 1fr);
-    }
+    // .looked__content {
+    //     // отменили, сбросили то что было (initial)
+    //     grid-auto-columns: initial;
+    //     grid-auto-flow: initial;
+    //     // два блока на весь экран
+    //     grid-template-columns: repeat(2, 1fr);
+    // }
 
-    .popular-box {
-        // отменили, сбросили то что было (initial)
-        grid-auto-columns: initial;
-        grid-auto-flow: initial;
-        // два блока на весь экран
-        grid-template-columns: repeat(2, 1fr);
-    }
+    // .popular-box {
+    //     // отменили, сбросили то что было (initial)
+    //     grid-auto-columns: initial;
+    //     grid-auto-flow: initial;
+    //     // два блока на весь экран
+    //     grid-template-columns: repeat(2, 1fr);
+    // }
 
-    .footer-box1 {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
+    // .footer-box1 {
+    //     padding-top: 20px;
+    //     padding-bottom: 20px;
+    // }
 
-    .container--ft1 {
-        flex-direction: column;
-        gap: 10px;
-    }
+    // .container--ft1 {
+    //     flex-direction: column;
+    //     gap: 10px;
+    // }
 
-    .container--ft2 {
-        flex-direction: column;
-        gap: 10px;
-    }
+    // .container--ft2 {
+    //     flex-direction: column;
+    //     gap: 10px;
+    // }
 
-    .footer-box2__name {
-        text-align: center;
-    }
+    // .footer-box2__name {
+    //     text-align: center;
+    // }
 }
 
 // small - sm 576px

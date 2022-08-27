@@ -1,17 +1,18 @@
-@import "../libs/normalize";
-@import "presets/skin";
-@import "presets/variables";
-@import "common";
-@import "button";
-@import "navbar";
-@import "hero";
-@import "offer";
-@import "submit";
-@import "impuls";
-@import "looked";
-@import "popular";
-@import "footer";
-@import "media";
+@use "../libs/normalize";
+
+@use "presets";
+
+@use "common";
+@use "button";
+@use "navbar";
+@use "hero";
+@use "offer";
+@use "submit";
+@use "impuls";
+@use "looked";
+@use "popular";
+@use "footer";
+@use "media";
 
 
 

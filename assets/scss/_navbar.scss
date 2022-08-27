@@ -1,3 +1,5 @@
+@use "presets" as *;
+
 .navbar-secondary {
     background: $color-light;
     /* укажем мин высоту */
@@ -55,8 +57,12 @@
         align-items: center;
         /* на всякий случай растояние между блоками, ширина, высота */
         gap: 10px 40px;
-    }
 
+        @media (max-width: $mn) {
+            justify-content: center
+        }
+
+    }
 }
 
 .logo {

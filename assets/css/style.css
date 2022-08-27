@@ -911,6 +911,9 @@ a {
 
     gap: 10px;
   }
+  .footer-box2__name {
+    text-align: center;
+  }
   .container--ft2 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -918,9 +921,6 @@ a {
         flex-direction: column;
 
     gap: 10px;
-  }
-  .footer-box2__name {
-    text-align: center;
   }
 }
 

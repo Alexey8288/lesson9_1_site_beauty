@@ -1,3 +1,5 @@
+@use "presets" as *;
+
 .looked {
     margin-bottom: 80px;
 
@@ -22,6 +24,14 @@
         grid-auto-columns: minmax(0, 1fr);
         grid-auto-flow: column;
         gap: 30px;
+
+        @media (max-width: $mn) {
+            // отменили, сбросили то что было (initial)
+            grid-auto-columns: initial;
+            grid-auto-flow: initial;
+            // два блока на весь экран
+            grid-template-columns: repeat(2, 1fr);
+        }
 
         &-item {
             background-color: $color-white;

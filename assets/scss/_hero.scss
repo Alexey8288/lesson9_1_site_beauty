@@ -1,3 +1,5 @@
+@use "presets" as *;
+
 .hero {
     min-height: 604px;
     /* ширину не задаем, она меняется от размера экрана */
@@ -16,6 +18,10 @@
     padding-bottom: 192px;
     /* цвет можно поставить здесь, будет относится ко всему блоку */
     color: $color-white;
+
+    @media (max-width: $mn) {
+        background-position: 68% 50%;
+    }
 
     &__content {
         max-width: 310px;
