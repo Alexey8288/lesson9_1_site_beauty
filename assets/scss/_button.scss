@@ -25,6 +25,8 @@
     line-height: 16px;
     /* расстояние между буквами */
     letter-spacing: 0.05em;
+    // на кнопки при наведении стрелка меняется на пальчик
+        cursor: pointer;
 
     &--primary {
         color: $color-primary-black;
