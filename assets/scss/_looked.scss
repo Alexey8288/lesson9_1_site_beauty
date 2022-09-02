@@ -19,7 +19,7 @@
         // display: grid;
         /* ставим горизонтально, делим на 4 части по 1 fr, одинаково */
         // grid-template-columns: repeat(4, 1fr);
-        // способ 2
+        // способ 2gr
         display: grid;
         /* ставим горизонтально, делим на 4 части по 1 fr, одинаково */
         grid-auto-columns: minmax(0, 1fr);
